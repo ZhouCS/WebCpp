@@ -1,0 +1,19 @@
+\{
+	"webcppVersion": "{webcppVersion}",
+	"location":
+	\{
+		"module": "Foo",
+		"controller": "Bar",
+		"action": "lorem"
+	},
+	"route": "Foo::Lorem",
+	"view": "::Moo.html",
+	"execTime":
+	\{
+		"total": {totalExecTime|raw},
+		"system": {systemExecTime|raw},
+		"sql": {sqlExecTime|raw},
+		"templates": {templatesExecTime|raw}
+	},
+	"sqlQueryCount": {sqlQueryCount|raw}
+}

@@ -1,0 +1,26 @@
+
+.code.sql .keyword
+{
+	color: #0000AA;
+	font-weight: bold;
+}
+
+.code.sql .identifier
+{
+	color: green;
+}
+
+.code.sql .type
+{
+	color: #b0003f;
+}
+
+.code.sql .number
+{
+	color: #007f7f;
+}
+
+.code.sql .string
+{
+	color: #7f007f;
+}

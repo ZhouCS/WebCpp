@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Segmentation fault — WebCpp</title>
+
+	<meta charset="utf-8" />
+	<meta name="robots" content="noindex, nofollow" />
+
+	<link rel="icon" type="image/png" href="/sys/images/errors/segfault-favicon.png" />
+
+	<link rel="stylesheet" href="/sys/css/errors/segfault.css" />
+	<link rel="stylesheet" href="/sys/css/code-block.css" />
+	<link rel="stylesheet" href="/sys/css/code-highlighters.css" />
+</head>
+<body>
+	<header>
+		<a href="http://www.webcpp.org/">
+			<strong>WebCpp<span>.org</span></strong>
+			<em>A C++ Web development framework</em>
+		</a>
+	</header>
+
+	<section>
+		<h1>Segmentation fault!</h1>
+
+		<p>
+			A <strong>segmentation fault</strong> occured during the processing of the
+			request.
+		</p>
+
+		<p>
+			This should never happen. Check your code using the stack trace below to
+			see what may caused that error.
+		</p>
+
+		<p>
+			If you think this segfault occured in WebCpp's internals and that your
+			code is not in fault, please report this bug to <a
+			href="http://bugs.webcpp.org/">http://bugs.webcpp.org/</a>.
+		</p>
+
+		<p>
+			The WebCpp instance is still running but we recommend you restart it. This
+			segfault may causes strange side effects. Use option <code>-s</code> (or
+			<code>--no-segfault-handling</code>) to prevent WebCpp handling the
+			segfault to let your debugger catch it for debugging.
+		</p>
+
+		<h2>Stack trace</h2>
+
+		<ol id="StackTrace" start="0">
+		{{for entry in stackTrace}}
+			<li>
+				<strong class="code cpp">{entry.functionName|codeHighlight('cpp')}</strong>
+				<span class="address">0x{entry.address|hex}</span>
+				<span class="object">from <code>{entry.object}</code></span>
+				<span class="location"><span class="source">{entry.fileName}</span> <span class="line">(line {entry.line})</span></span>
+			</li>
+		{{/for}}
+		</ol>
+	</section>
+
+	<footer>
+		<p>Powered by WebCpp/{webcppVersion} on {serverName}.</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+
+.code.cpp .commentBlock
+{ color: #787878; }
+
+.code.cpp .docComment
+{ color: #d43b34; }
+	.code.cpp .docComment .token
+	{
+		color: #a60769;
+		font-weight: bold;
+	}
+	
+.code.cpp .preprocessor
+{ color: #958334; }
+
+.code.cpp .keyword
+{
+	color: #00008c;
+	font-weight: bold;
+}
+.code.cpp .type
+{ color: #b0003f; }
+
+.code.cpp .string
+{ color: #7f007f; }
+
+.code.cpp .string .escapedChar
+{ font-weight: bold; }
+
+.code.cpp .char
+{ color: #c000c0; }
+
+.code.cpp .char .escapedChar
+{ font-weight: bold; }
+
+.code.cpp .commentLine
+{ color: #8c888a; }
+
+.code.cpp .number
+{ color: #007f7f; }

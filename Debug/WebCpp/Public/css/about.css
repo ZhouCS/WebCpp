@@ -1,0 +1,127 @@
+
+body
+{
+	font-family: 'DejaVu Sans', 'Trebuchet MS', sans-serif;
+	font-size: 13px;
+	
+	background-color: #DDDDDD;
+	background-image: -moz-linear-gradient(top, #EEEEEE 0px, #DDDDDD 80px);
+	background-repeat: no-repeat;
+	
+	cursor: default;
+}
+
+main
+{
+	width: 800px;
+	
+	margin: auto;
+	margin-top: 60px;
+	padding: 18px;
+	
+	background-color: white;
+	
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+	border-radius: 18px;
+}
+
+main > header
+{
+	width: 300px;
+	margin: auto;
+	margin-bottom: 40px;
+}
+	main > header a
+	{
+		display: block;
+		width: 300px;
+		color: black;
+		text-decoration: none;
+	}
+		main > header strong
+		{
+			display: block;
+			
+			font-family: Georgia, 'DejaVu Serif', serif;
+			font-size: 48px;
+			font-style: italic;
+			text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.33);
+		}
+			main > header strong span
+			{
+				font-size: 22px;
+			}
+		main > header em
+		{
+			display: block;
+			
+			margin-top: 5px;
+			margin-left: 25px;
+			
+			font-style: italic;
+			font-size: 14px;
+			text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+		}
+
+table
+{
+	border-collapse: collapse;
+	margin: auto;
+	margin-bottom: 20px;
+}
+	th
+	{
+		background: #555555;
+		border: 1px solid #555555;
+		color: white;
+	}
+		tr:nth-child(odd) td
+		{
+			background: #EEEEEE;
+		}
+	td
+	{
+		padding: 3px;
+		padding-left: 5px;
+		padding-right: 5px;
+		border: 1px solid #444444;
+	}
+		td:first-child
+		{
+			text-align: right;
+		}
+
+#links a
+{
+	color: black;
+	text-decoration: none;
+	
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	
+	padding: 7px;
+	padding-left: 35px;
+	padding-right: 11px;
+	
+	margin-right: 10px;
+}
+	#manager
+	{
+		background-image: url('/sys/images/manager.png');
+	}
+	#website
+	{
+		background-image: url('/sys/images/website.png');
+	}
+	#links a:hover
+	{
+		padding: 6px;
+		padding-left: 34px;
+		padding-right: 10px;
+		
+		background-image: -moz-linear-gradient(top, #EDEDED 0%, #CECECE 100%);
+		
+		border: 1px solid #979897;
+		border-bottom-width: 2px;
+		border-radius: 5px;
+	}

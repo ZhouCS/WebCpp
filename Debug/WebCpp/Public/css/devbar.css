@@ -1,0 +1,178 @@
+
+html
+{
+	padding-bottom: 30px;
+}
+
+#_sys_devbar
+{
+	width: 100%;
+	height: 30px;
+	
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	
+	border-top: 1px solid gray;
+	
+	background: -moz-linear-gradient(top, #DDDDDD 0%, #BBBBBB 100%);
+	background: -webkit-linear-gradient(top, #DDDDDD 0%, #BBBBBB 100%);
+	
+	box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.3);
+	
+	font: 13px 'DejaVu Sans', sans-serif;
+	
+	cursor: default;
+}
+	#_sys_devbar_version
+	{
+		height: 23px;
+		
+		padding-top: 7px;
+		padding-left: 8px;
+		padding-right: 8px;
+		
+		float: left;
+		
+		border-right: 1px solid #AAAAAA;
+	}
+	
+	#_sys_devbar_location
+	{
+		height: 23px;
+		
+		padding-top: 7px;
+		padding-left: 38px;
+		padding-right: 12px;
+		
+		float: left;
+		
+		border-right: 1px solid #AAAAAA;
+		
+		background: url('../images/devbar/location.png') 8px center no-repeat;
+		
+		font-family: 'DejaVu Sans Mono', monospace;
+	}
+		#_sys_devbar_location_module
+		{ color: #990000; }
+		#_sys_devbar_location_controller
+		{ color: #009900; }
+		#_sys_devbar_location_action
+		{ color: #000099; }
+	
+	#_sys_devbar_route
+	{
+		height: 23px;
+		
+		padding-top: 7px;
+		padding-left: 38px;
+		padding-right: 12px;
+		
+		float: left;
+		
+		border-right: 1px solid #AAAAAA;
+		
+		background: url('../images/devbar/route.png') 8px center no-repeat;
+		
+		font-family: 'DejaVu Sans Mono', monospace;
+	}
+	
+	#_sys_devbar_view
+	{
+		height: 23px;
+		
+		padding-top: 7px;
+		padding-left: 38px;
+		padding-right: 12px;
+		
+		float: left;
+		
+		border-right: 1px solid #AAAAAA;
+		
+		background: url('../images/devbar/view.png') 8px center no-repeat;
+		
+		font-family: 'DejaVu Sans Mono', monospace;
+	}
+	
+	#_sys_devbar_execTime
+	{
+		height: 23px;
+		min-width: 70px;
+		
+		padding-top: 7px;
+		padding-left: 38px;
+		padding-right: 8px;
+		
+		float: left;
+		
+		border-right: 1px solid #AAAAAA;
+		
+		background: url('../images/devbar/exec-time.png') 8px center no-repeat;
+	}
+		#_sys_devbar_execTime_tooltip
+		{
+			position: absolute;
+			bottom: 25px;
+			display: none;
+			
+			padding: 8px;
+			
+			background-color: rgba(0, 0, 0, 0.8);
+			border-radius: 10px;
+			box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.9);
+			
+			color: white;
+		}
+			#_sys_devbar_execTime_tooltip table
+			{
+				border-collapse: collapse;
+			}
+				#_sys_devbar_execTime_tooltip table td
+				{
+					font: 13px 'DejaVu Sans', sans-serif;
+					color: white;
+				}
+				#_sys_devbar_execTime_tooltip table td.label
+				{
+					padding-right: 15px;
+				}
+	
+	#_sys_devbar_database
+	{
+		height: 23px;
+		min-width: 90px;
+		
+		padding-top: 7px;
+		padding-left: 38px;
+		padding-right: 8px;
+		
+		float: left;
+		
+		border-right: 1px solid #AAAAAA;
+		
+		background: url('../images/devbar/database.png') 8px center no-repeat;
+	}
+		#_sys_devbar_database_execTime
+		{ font-size: 11px; }
+	
+	#_sys_devbar_close
+	{
+		width: 18px;
+		height: 18px;
+		
+		position: absolute;
+		
+		background: url('../images/devbar/close.png') center no-repeat;
+		
+		border: 1px solid transparent;
+		border-radius: 4px;
+		
+		right: 8px;
+		top: 5px;
+	}
+		#_sys_devbar_close:hover
+		{
+			border: 1px solid #87BAD4;
+		}
+		#_sys_devbar_close:active
+		{ opacity: 1; }

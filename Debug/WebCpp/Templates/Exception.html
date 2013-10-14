@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>“{exceptionName}” exception — WebCpp</title>
+	
+	<meta charset="utf-8" />
+	<meta name="robots" content="noindex, nofollow" />
+	
+	<link rel="icon" type="image/png" href="/sys/images/errors/exception-favicon.png" />
+	
+	<link rel="stylesheet" href="/sys/css/errors/exception.css" />
+	<link rel="stylesheet" href="/sys/css/code-block.css" />
+	<link rel="stylesheet" href="/sys/css/code-highlighters/cpp.css" />
+	<link rel="stylesheet" href="/sys/css/code-highlighters/sql.css" />
+	<link rel="stylesheet" href="/sys/css/linux.css" />
+</head>
+<body>
+	<header>
+		<a href="http://www.webcpp.org/">
+			<strong>WebCpp<span>.org</span></strong>
+			<em>A C++ Web development framework</em>
+		</a>
+	</header>
+	
+	<section>
+		<h1>“{exceptionName}” exception</h1>
+		
+		{exceptionMessage|raw}
+		
+		<h2>Stack trace</h2>
+		
+		<ol id="StackTrace" start="0">
+		{{for entry in stackTrace}}
+			<li>
+				<strong class="code cpp">{entry.functionName|codeHighlight('cpp')}</strong>
+				<span class="address" title="from {entry.object}">0x{entry.address|hex}</span>
+				{{if #entry.fileName > 0 && entry.line > 0}}<span class="location"><span class="source">{entry.fileName}</span> <span class="line">(line {entry.line})</span></span>{{/if}}
+			</li>
+		{{/for}}
+		</ol>
+	</section>
+	
+	<footer>
+		<p>Powered by WebCpp/{webcppVersion} on {serverName}.</p>
+	</footer>
+</body>
+</html>
