@@ -1,0 +1,136 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+#########################################################################
+# Copyright © 2011-2012 Kévin Lesénéchal <kevin.lesenechal@bilbax.com>  #
+#                                                                       #
+# This program is free software: you can redistribute it and/or modify  #
+# it under the terms of the GNU General Public License as published by  #
+# the Free Software Foundation, either version 3 of the License, or     #
+# (at your option) any later version.                                   #
+#                                                                       #
+# This program is distributed in the hope that it will be useful,       #
+# but WITHOUT ANY WARRANTY; without even the implied warranty of        #
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         #
+# GNU General Public License for more details.                          #
+#                                                                       #
+# You should have received a copy of the GNU General Public License     #
+# along with this program.  If not, see <http://www.gnu.org/licenses/>. #
+#########################################################################
+
+
+OUTPUT = "../../../Debug/WebCpp/Plugins/CodeHighlighters/Sql.so"
+
+IS_CPP = True
+DEBUG = True
+OPTIMIZATION = True
+OPTIMIZATION_LEVEL = 3
+ARCH = "native"
+
+SOURCES_DIR = "Sources/"
+INCLUDE_DIRS = (".", "Headers", "/usr/local/include/webcpp")
+OBJECTS_DIR = "Build/"
+
+LIBS = []
+DEFINES = []
+
+STANDARD = "gnu++0x"
+COMPILER_OPTIONS = "-pedantic -Wall -Wextra -fPIC"
+LINKER_OPTIONS = "-shared"
+
+#INSTALLATION_SCRIPT = """"""
+
+EXCLUDE_SOURCES = ()
+
+FILE_OPTIONS = {}
+
+#—————————————————————————————————————————————————————————————————————————————————————#
+#                    The part below should not be edited at all                       #
+#—————————————————————————————————————————————————————————————————————————————————————#
+
+import os, re
+
+if 'EXCLUDE_SOURCES' not in locals():
+	EXCLUDE_SOURCES = []
+
+if 'SOURCES' not in locals():
+	SOURCES = []
+	for dirname, dirnames, filenames in os.walk(SOURCES_DIR):
+		for filename in filenames:
+			filename = dirname[len(SOURCES_DIR):]+(dirname != SOURCES_DIR and "/" or "")+filename
+			if filename.split('.')[-1] in ["c", "cpp", "C", "cxx", "c++"] and filename not in EXCLUDE_SOURCES:
+				SOURCES.append(filename)
+
+objects = []
+for source in SOURCES:
+	objects.append(OBJECTS_DIR + ".".join(source.replace("/", "_").split('.')[0:-1]) + ".o")
+
+libs = ""
+for lib in LIBS:
+	libs += "-l"+lib+" "
+libs = libs[0:-1]
+
+incDirs = ""
+for incDir in INCLUDE_DIRS:
+	incDirs += "-I"+incDir+" "
+
+defines = ""
+for define in DEFINES:
+	defines += "-D"+define+" "
+
+def parseIncludes(i, headers, filePath, firstLevel):
+	fileHandle = open(filePath, 'r')
+	content = fileHandle.read()
+	fileHandle.close()
+	tmpHeaders = []
+	if firstLevel:
+		headers.append([])
+	matches = re.findall("[ \t]*\\#[ \t]*include[ \t]*\"(.*)\"", content)
+	for match in matches:
+		for incDir in INCLUDE_DIRS:
+			if os.path.exists(incDir+"/"+match):
+				includePath = incDir != "." and incDir+"/" or ""
+				filePath = includePath+match
+				if filePath not in headers[i]:
+					headers[i].append(filePath)
+					parseIncludes(i, headers, filePath, False)
+					break
+	if not firstLevel:
+		return tmpHeaders
+
+headers = []
+for i, source in enumerate(SOURCES):
+	parseIncludes(i, headers, SOURCES_DIR + source, True)
+
+compilerVarName = IS_CPP and "CXX" or "CC"
+
+makefile  = (IS_CPP and "CXX" or "CC ")+"      = " + (IS_CPP and "g++" or "gcc") + "\n"
+makefile += "NAME     = " + OUTPUT + "\n"
+makefile += (IS_CPP and "CXXFLAGS" or "CFLAGS") + " = " + "-std="+STANDARD+" "+(DEBUG and "-g " or "")+((not DEBUG and OPTIMIZATION) and "-O"+str(OPTIMIZATION_LEVEL)+" " or "")
+makefile += ((not DEBUG and ARCH_OPTIMIZATION) and "-march="+ARCH+" " or "")+incDirs+defines+COMPILER_OPTIONS+"\n"
+makefile += "LDFLAGS  = " + libs+" "+LINKER_OPTIONS+"\n"
+makefile += "OBJS     = " + (" ".join(objects)) + "\n\n"
+
+if 'INSTALLATION_SCRIPT' in locals():
+	install = ""
+	for line in INSTALLATION_SCRIPT.split('\n'):
+		install += "\t"+line+"\n";
+	makefile += "install:\n"+install+"\n"
+
+makefile += "$(NAME): $(OBJS)\n"
+makefile += "\t$("+compilerVarName+") $(OBJS) $(LDFLAGS) -o $(NAME)\n\n"
+
+for i, source in enumerate(SOURCES):
+	makefile += objects[i]+": "+SOURCES_DIR+source+" "+(" ".join(headers[i]))+"\n"
+	makefile += "\t$("+compilerVarName+") $("+(IS_CPP and "CXXFLAGS" or "CFLAGS")+") "
+	if source in FILE_OPTIONS:
+		makefile += FILE_OPTIONS[source]+" "
+	makefile += "-c "+SOURCES_DIR+source+" -o "+objects[i]+"\n\n"
+
+makefile += "all: $(NAME)\n\n"
+makefile += "clean:\n\trm -f $(OBJS)\n\nfclean: clean\n\trm -f $(NAME)\n\nre: fclean all\n\n"
+makefile += ".PHONY: all " + ('INSTALLATION_SCRIPT' in locals() and "install " or "") + "clean fclean re"
+
+makefileHandle = open("Makefile", 'w')
+makefileHandle.write(makefile)
+makefileHandle.close()
