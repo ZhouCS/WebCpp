@@ -33,10 +33,11 @@ Regex::Regex()
 { }
 
 Regex::Regex(const String& pattern, int options)
+  : _pattern(pattern),
+    _options(options),
+    _regex(nullptr),
+    _study(nullptr)
 {
-	_pattern = pattern;
-	_options = options;
-
 	compile();
 }
 
@@ -45,22 +46,32 @@ Regex::~Regex()
 	pcre_free(_regex);
 }
 
-void Regex::compile()
+void Regex::compile(StudyBool toStudy)
 {
 	const char* errMsg;
 	int errOffset;
 
 	_regex = pcre_compile(_pattern, _options, &errMsg, &errOffset, nullptr);
-
 	if (_regex == nullptr)
 		throw Exceptions::RegexCompilation(*this, errMsg, errOffset);
+
+	if (toStudy)
+		study();
+}
+
+void Regex::study()
+{
+	const char* errMsg;
+
+	_study = pcre_study(_regex, PCRE_STUDY_JIT_COMPILE
+	                            | PCRE_STUDY_JIT_PARTIAL_HARD_COMPILE, &errMsg);
 }
 
 bool Regex::exec(const String& str)
 {
 	int count = capturesCount();
 	int* matches = new int[(count + 1) * 3];
-	int r = pcre_exec(_regex, nullptr, str, str.size(), 0, 0, matches,
+	int r = pcre_exec(_regex, _study, str, str.size(), 0, 0, matches,
 	                  (count + 1) * 3);
 	if (r == -1)
 	{
