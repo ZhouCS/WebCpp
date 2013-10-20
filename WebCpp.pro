@@ -14,7 +14,7 @@ LIBS = -lpcre -lfcgi++ -lfcgi -ldl -lboost_date_time -lboost_program_options -lp
 
 debug {
 	DEFINES = DEBUG
-	QMAKE_CXXFLAGS = -std=gnu++11 -pedantic -Wextra -Ofast -march=native
+	QMAKE_CXXFLAGS = -std=gnu++11 -pedantic -Wextra
 	QMAKE_LFLAGS = -Wl,--export-dynamic
 } else {
 	QMAKE_CXXFLAGS = -std=gnu++11 -pedantic -Wextra -Ofast -march=native

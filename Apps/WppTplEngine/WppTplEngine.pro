@@ -12,7 +12,7 @@ QMAKE_LFLAGS = -shared
 
 debug {
 	#DEFINES = DEBUG
-	QMAKE_CXXFLAGS = -std=gnu++11 -fPIC -pedantic -Wextra -Ofast -march=native
+	QMAKE_CXXFLAGS = -std=gnu++11 -fPIC -pedantic -Wextra
 } else {
 	QMAKE_CXXFLAGS = -std=gnu++11 -fPIC -pedantic -Wextra -Ofast -march=native
 }
