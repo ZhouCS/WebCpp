@@ -94,6 +94,13 @@ Block::Block(CompiledTpl* tpl,
 		else if (_src[i] != '\0')
 			i++;
 	}
+
+	if (blocks.count() > 1)
+	{
+		Block* block = blocks.pop();
+		throw ECompile(_tpl, String("unexpected end of template, expecting closing "
+		                            "of block “%1”").format(block->name()));
+	}
 }
 
 Block::~Block()
