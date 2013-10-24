@@ -127,7 +127,7 @@ bool Block::isEscaped(int* i)
 void Block::parseBlock(int* i, Stack<Block*>* blocks)
 {
 	String name, arg;
-	int origin = *i;
+	int origin = *i; // origin = ...<{>{...
 
 	*i += 2;
 	skipWhitespaces(i);
@@ -181,8 +181,7 @@ void Block::parseBlock(int* i, Stack<Block*>* blocks)
 		_src = _src.replace(origin, *i - 1, "");
 		blocks->top()->_vals.insert(origin - blocks->top()->_innerStart,
 		                            Value(block));
-		block->compiledEvent();
-		*i = origin - 2;
+		*i = origin;
 	}
 }
 
