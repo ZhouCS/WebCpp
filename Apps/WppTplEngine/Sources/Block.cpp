@@ -94,6 +94,13 @@ Block::Block(CompiledTpl* tpl,
 		else if (_src[i] != '\0')
 			i++;
 	}
+
+	if (blocks.count() > 1)
+	{
+		Block* block = blocks.pop();
+		throw ECompile(_tpl, String("unexpected end of template, expecting closing "
+		                            "of block “%1”").format(block->name()));
+	}
 }
 
 Block::~Block()
@@ -120,7 +127,7 @@ bool Block::isEscaped(int* i)
 void Block::parseBlock(int* i, Stack<Block*>* blocks)
 {
 	String name, arg;
-	int origin = *i;
+	int origin = *i; // origin = ...<{>{...
 
 	*i += 2;
 	skipWhitespaces(i);
@@ -174,8 +181,7 @@ void Block::parseBlock(int* i, Stack<Block*>* blocks)
 		_src = _src.replace(origin, *i - 1, "");
 		blocks->top()->_vals.insert(origin - blocks->top()->_innerStart,
 		                            Value(block));
-		block->compiledEvent();
-		*i = origin - 2;
+		*i = origin;
 	}
 }
 
