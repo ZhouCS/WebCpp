@@ -53,8 +53,10 @@ public:
 
 	String       name() const;
 	CompiledTpl* tpl() const;
+	MultiMap<int, Expr*>  exprs() const;
 	MultiMap<int, Block*> blocks() const;
 	Variant      var(Template* tpl, const String& name) const;
+	String       staticContent() const;
 
 public:
 	static void registerBlock(Block* block);

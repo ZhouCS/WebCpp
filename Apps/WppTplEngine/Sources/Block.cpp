@@ -353,6 +353,17 @@ String Block::name() const
 CompiledTpl* Block::tpl() const
 { return _tpl; }
 
+MultiMap<int, Expr*> Block::exprs() const
+{
+	MultiMap<int, Expr*> r;
+	for (MultiMap<int, Value>::Iterator i(_vals); i.hasNext(); i++)
+	{
+		if (i.value().expr != nullptr)
+			r.insert(i.key(), i.value().expr);
+	}
+	return r;
+}
+
 MultiMap<int, Block*> Block::blocks() const
 {
 	MultiMap<int, Block*> r;
@@ -374,3 +385,6 @@ Variant Block::var(Template* tpl, const String& name) const
 		throw 42; // FIX ME
 	return tpl->get(name);
 }
+
+String Block::staticContent() const
+{ return _src; }
