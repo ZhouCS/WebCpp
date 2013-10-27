@@ -69,6 +69,11 @@ public:
 	Path filePath() const;
 
 	/**
+	 * @brief Get the compiled template instance
+	 */
+	AbstractCompiledTemplate* compiledTpl() const;
+
+	/**
 	 * @brief Set the request to render this template
 	 */
 	void setRequest(Request* request);

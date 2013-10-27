@@ -105,6 +105,9 @@ String Template::resolveName(const String& name, const Module* defaultModule)
 Path Template::filePath() const
 { return _filePath; }
 
+AbstractCompiledTemplate* Template::compiledTpl() const
+{ return _compiled; }
+
 void Template::setRequest(Request* request)
 {
 	AbstractView::setRequest(request);
