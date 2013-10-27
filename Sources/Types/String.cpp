@@ -467,8 +467,9 @@ String String::sqlEscape(AbstractDbConnection* dbConnection) const
 String String::trim() const
 {
 	int start = 0, end = size() - 1;
+	const char* str = toCString();
 
-	while (at(start) == ' ' || at(start) == '\t' || at(start) == '\n')
+	while (str[start] == ' ' || str[start] == '\t' || str[start] == '\n')
 		start++;
 	if (end > 0)
 	{
