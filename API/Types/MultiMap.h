@@ -72,6 +72,11 @@ public:
 	void insert(const Key& key, const Value& value);
 
 	/**
+	 * @brief Removes all element in the map
+	 */
+	void clear();
+
+	/**
 	 * @brief Get the map iterator
 	 */
 	typename MultiMap<Key, Value>::Iterator it() const;
@@ -80,6 +85,16 @@ public:
 	 * @brief Get the keys list
 	 */
 	List<Key> keys() const;
+
+	/**
+	 * @brief Get the values list
+	 */
+	List<Value> values() const;
+
+	/**
+	 * @brief Get the number of items
+	 */
+	int count() const;
 
 	/**
 	 * @brief A map iterator

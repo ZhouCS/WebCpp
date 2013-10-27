@@ -63,7 +63,7 @@ public:
 	 * @param name The template file path
 	 * @return The template with the name @p name
 	 */
-	AbstractCompiledTemplate*
+	static AbstractCompiledTemplate*
 	  compiledTemplate(const Path& filePath,
 	                   AbstractTemplateEngine* tplEngine = nullptr);
 
@@ -73,6 +73,9 @@ public:
 	 * @param defaultEngine The new default template engine
 	 */
 	void setDefaultEngine(AbstractTemplateEngine* defaultEngine);
+
+public:
+	static AbstractTemplateEngine* engineByName(const String& name);
 
 private:
 	/**

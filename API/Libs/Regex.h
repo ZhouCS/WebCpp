@@ -59,6 +59,12 @@ public:
 		Ungreedy      = 0x200
 	};
 
+	enum StudyBool
+	{
+		DontStudy = false,
+		Study     = true
+	};
+
 	/**
 	 * @brief Constructs an empty regular expression
 	 */
@@ -78,7 +84,12 @@ public:
 	/**
 	 * @brief Compiles the regex
 	 */
-	void compile();
+	void compile(StudyBool toStudy = DontStudy);
+
+	/**
+	 * @brief Studies the regex for faster execution
+	 */
+	void study();
 
 	/**
 	 * @brief Executes the regex
@@ -123,6 +134,8 @@ private:
 	 * @brief The PCRE regex
 	 */
 	pcre* _regex;
+
+	pcre_extra* _study;
 
 	/**
 	 * @brief Captured textes

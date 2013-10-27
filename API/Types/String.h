@@ -253,21 +253,20 @@ public:
 	String right(int n) const;
 
 	/**
-	 * @brief Get a substring between two indexes
+	 * @brief Get a substring between two indexes (included)
 	 * @param start The starting index
-	 * @param end The ending index
-	 * @return A substring between indexes @p start and @p end.
+	 * @param end The ending index (included)
+	 * @return A substring between indexes @p start and @p end included.
 	 */
 	String mid(int start, int end) const;
 
 	/**
-	 * @brief Extracts a substring from left to right
-	 * @param left The starting index
-	 * @param right The ending index from the right
-	 * @return A substring from index @p left from the left to @p right from the
-	 *         right
+	 * @brief Get a substring between two indexes (excluded)
+	 * @param start The starting index
+	 * @param end The ending index (excluded)
+	 * @return A substring between indexes @p start and @p end excluded.
 	 */
-	String midToRight(int left, int right) const;
+	String midExcluded(int start, int end) const;
 
 
 	/**
