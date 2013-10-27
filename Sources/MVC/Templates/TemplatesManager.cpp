@@ -79,12 +79,12 @@ TemplatesManager::compiledTemplate(const Path& filePath,
 {
 	AbstractCompiledTemplate* compiledTpl;
 
-	if (_templates.hasKey(filePath))
+	if (TemplatesManager::get()->_templates.hasKey(filePath.absolutePath()))
 	{
-		compiledTpl = _templates[filePath];
+		compiledTpl = TemplatesManager::get()->_templates[filePath.absolutePath()];
 #ifdef DEBUG
 		if (File(filePath).lastEditTime() > compiledTpl->compileTime())
-			;//delete compiledTpl;
+			delete compiledTpl;
 		else
 			return compiledTpl;
 #endif
@@ -94,10 +94,10 @@ TemplatesManager::compiledTemplate(const Path& filePath,
 	}
 
 	if (tplEngine == nullptr)
-		tplEngine = _defaultEngine;
+		tplEngine = TemplatesManager::get()->_defaultEngine;
 
 	compiledTpl = tplEngine->compile(filePath);
-	_templates.set(filePath, compiledTpl);
+	TemplatesManager::get()->_templates.set(filePath.absolutePath(), compiledTpl);
 
 	return compiledTpl;
 }

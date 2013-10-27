@@ -63,7 +63,7 @@ public:
 	 * @param name The template file path
 	 * @return The template with the name @p name
 	 */
-	AbstractCompiledTemplate*
+	static AbstractCompiledTemplate*
 	  compiledTemplate(const Path& filePath,
 	                   AbstractTemplateEngine* tplEngine = nullptr);
 
