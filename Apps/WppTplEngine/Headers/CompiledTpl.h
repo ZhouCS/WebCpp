@@ -43,6 +43,17 @@ public:
 	 */
 	virtual String render(Template* tpl) override;
 
+	/**
+	 * @brief Get the template's root block
+	 */
+	Block* rootBlock() const;
+
+	/**
+	 * @brief Set the template's root block
+	 * @param rootBlock The new root block
+	 */
+	void setRootBlock(Block* rootBlock);
+
 private:
 	/**
 	 * @brief The template's root block

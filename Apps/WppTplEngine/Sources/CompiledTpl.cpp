@@ -29,12 +29,23 @@
 #include <File>
 
 CompiledTpl::CompiledTpl(const Path& filePath)
-  : AbstractCompiledTemplate(filePath)
+  : AbstractCompiledTemplate(filePath),
+    _rootBlock(nullptr)
 {
-	_rootBlock = new Block(this, File::getContent(filePath));
+	Block* root = new Block(this, File::getContent(filePath));
+	if (_rootBlock == nullptr)
+		_rootBlock = root;
 }
 
 String CompiledTpl::render(Template* tpl)
 {
 	return _rootBlock->render(tpl);
 }
+
+//----------------------------------------------------------------------------//
+
+Block* CompiledTpl::rootBlock() const
+{ return _rootBlock; }
+
+void CompiledTpl::setRootBlock(Block* rootBlock)
+{ _rootBlock = rootBlock; }
