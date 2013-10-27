@@ -59,7 +59,7 @@ private:
 	String popMapKey();
 	void popOp(Operator* op, bool isUnary);
 	bool isOperand(int i, bool toRight);
-	bool opIsUnary();
+	bool opIsUnary(int i = -1);
 
 private:
 	Expr*            _expr;

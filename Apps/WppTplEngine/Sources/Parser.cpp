@@ -361,23 +361,25 @@ bool Parser::isOperand(int i, bool toRight)
 	                 || _lex[i].type == Lexem::RightBraceToken))
 		return true;
 	if (_lex[i].type == Lexem::OperatorToken
-	    && _lex[i].opIsUnary
+	    && opIsUnary(i)
 	    && !_lex[i].op->isRightAssociative(true))
 		return true;
 	return false;
 }
 
-bool Parser::opIsUnary()
+bool Parser::opIsUnary(int i)
 {
-	Operator* op = _lex[_i].op;
+	if (i == -1)
+		i = _i;
+	Operator* op = _lex[i].op;
 	if (!op->isUnary())
 		return false;
 	if (!op->isBinary())
 		return true;
-	return (op->isRightAssociative(true) && (_i == 0
-	                                         || !isOperand(_i - 1, false)))
-	    || (!op->isRightAssociative(true) && (_i == _count - 1
-	                                          || !isOperand(_i + 1, true)));
+	return (op->isRightAssociative(true) && (i == 0
+	                                         || !isOperand(i - 1, false)))
+	    || (!op->isRightAssociative(true) && (i == _count - 1
+	                                          || !isOperand(i + 1, true)));
 }
 
 ExprNode* Parser::rootExprNode() const
