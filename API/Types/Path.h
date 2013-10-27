@@ -23,8 +23,8 @@
  * @date 2011-12-11
  */
 
-#ifndef _TYPES_PATH_H_
-#define	_TYPES_PATH_H_
+#ifndef _WPP_TYPES_PATH_H_
+#define	_WPP_TYPES_PATH_H_
 
 #include "System.h"
 #include "Types/String.h"
@@ -59,4 +59,4 @@ private:
 	String _absolutePath;
 };
 
-#endif // !_TYPES_PATH_H_
+#endif // !_WPP_TYPES_PATH_H_

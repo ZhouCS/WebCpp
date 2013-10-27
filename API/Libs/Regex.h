@@ -23,8 +23,8 @@
  * @date 2011-12-05
  */
 
-#ifndef _LIBS_REGEX_H_
-#define	_LIBS_REGEX_H_
+#ifndef _WPP_LIBS_REGEX_H_
+#define	_WPP_LIBS_REGEX_H_
 
 #include <pcre.h>
 
@@ -148,4 +148,4 @@ private:
 	List<Pair<int, int>> _capturedIndexes;
 };
 
-#endif // !_LIBS_REGEX_H_
+#endif // !_WPP_LIBS_REGEX_H_

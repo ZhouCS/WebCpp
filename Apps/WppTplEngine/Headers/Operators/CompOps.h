@@ -23,8 +23,8 @@
  * @date 2013-07-31
  */
 
-#ifndef _OPERATORS_COMPOPS_H_
-#define _OPERATORS_COMPOPS_H_
+#ifndef _WPP_OPERATORS_COMPOPS_H_
+#define _WPP_OPERATORS_COMPOPS_H_
 
 #include "Operator.h"
 
@@ -80,4 +80,4 @@ public:
 
 } // ns Operators
 
-#endif // !_OPERATORS_COMPOPS_H_
+#endif // !_WPP_OPERATORS_COMPOPS_H_

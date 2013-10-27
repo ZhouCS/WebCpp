@@ -23,8 +23,8 @@
  * @date 2011-11-23
  */
 
-#ifndef _SYSTEM_H_
-#define _SYSTEM_H_
+#ifndef _WPP_SYSTEM_H_
+#define _WPP_SYSTEM_H_
 
 #include "Types/String.h"
 #include "Types/StringList.h"
@@ -197,4 +197,4 @@ private:
 	int _socket;
 };
 
-#endif // !_SYSTEM_H_
+#endif // !_WPP_SYSTEM_H_

@@ -23,8 +23,8 @@
  * @date 2012-01-31
  */
 
-#ifndef _TYPES_IPADDR_H_
-#define	_TYPES_IPADDR_H_
+#ifndef _WPP_TYPES_IPADDR_H_
+#define	_WPP_TYPES_IPADDR_H_
 
 #include "Types/String.h"
 #include "Types/ByteArray.h"
@@ -93,4 +93,4 @@ private:
 	uint32_t _intIp;
 };
 
-#endif // !_TYPES_IPADDR_H_
+#endif // !_WPP_TYPES_IPADDR_H_

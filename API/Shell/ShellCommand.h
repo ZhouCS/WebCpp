@@ -23,8 +23,8 @@
  * @date 2013-05-18
  */
 
-#ifndef _SHELL_SHELLCOMMAND_H_
-#define _SHELL_SHELLCOMMAND_H_
+#ifndef _WPP_SHELL_SHELLCOMMAND_H_
+#define _WPP_SHELL_SHELLCOMMAND_H_
 
 #include "Types/String.h"
 
@@ -56,4 +56,4 @@ void help(const StringList& args);
 
 }
 
-#endif // !_SHELL_SHELLCOMMAND_H_
+#endif // !_WPP_SHELL_SHELLCOMMAND_H_

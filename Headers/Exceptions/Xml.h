@@ -23,8 +23,8 @@
  * @date 2012-02-22
  */
 
-#ifndef _EXCEPTIONS_XML_H_
-#define	_EXCEPTIONS_XML_H_
+#ifndef _WPP_EXCEPTIONS_XML_H_
+#define	_WPP_EXCEPTIONS_XML_H_
 
 #include "Exceptions/Exception.h"
 
@@ -42,4 +42,4 @@ public:
 
 }
 
-#endif // !_EXCEPTIONS_XML_H_
+#endif // !_WPP_EXCEPTIONS_XML_H_

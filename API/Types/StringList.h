@@ -23,8 +23,8 @@
  * @date 2011-11-26
  */
 
-#ifndef _TYPES_STRINGLIST_H_
-#define _TYPES_STRINGLIST_H_
+#ifndef _WPP_TYPES_STRINGLIST_H_
+#define _WPP_TYPES_STRINGLIST_H_
 
 #include "Types/List.h"
 #include "Types/String.h"
@@ -63,4 +63,4 @@ public:
 	String dump() const;
 };
 
-#endif // !_TYPES_STRINGLIST_H_
+#endif // !_WPP_TYPES_STRINGLIST_H_

@@ -23,8 +23,8 @@
  * @date 2013-06-30
  */
 
-#ifndef _BLOCKS_CONDITIONBLOCKS_H_
-#define _BLOCKS_CONDITIONBLOCKS_H_
+#ifndef _WPP_BLOCKS_CONDITIONBLOCKS_H_
+#define _WPP_BLOCKS_CONDITIONBLOCKS_H_
 
 #include "Block.h"
 
@@ -76,4 +76,4 @@ public:
 
 } // ns Blocks
 
-#endif // !_BLOCKS_CONDITIONBLOCKS_H_
+#endif // !_WPP_BLOCKS_CONDITIONBLOCKS_H_

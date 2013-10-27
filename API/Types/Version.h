@@ -23,8 +23,8 @@
  * @date 2012-01-16
  */
 
-#ifndef _TYPES_VERSION_H_
-#define	_TYPES_VERSION_H_
+#ifndef _WPP_TYPES_VERSION_H_
+#define	_WPP_TYPES_VERSION_H_
 
 #include "Types/String.h"
 
@@ -51,4 +51,4 @@ private:
 	String _str;
 };
 
-#endif // !_TYPES_VERSION_H_
+#endif // !_WPP_TYPES_VERSION_H_

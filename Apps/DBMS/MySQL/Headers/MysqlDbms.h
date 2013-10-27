@@ -23,8 +23,8 @@
  * @date 2012-06-26
  */
 
-#ifndef _MYSQLDBMS_H_
-#define	_MYSQLDBMS_H_
+#ifndef _WPP_MYSQLDBMS_H_
+#define	_WPP_MYSQLDBMS_H_
 
 #include <DB/DatabaseSystem.h>
 #include <Plugin>
@@ -43,4 +43,4 @@ public:
 	virtual AbstractDbConnection* newConnection() const;
 };
 
-#endif // !_MYSQLDBMS_H_
+#endif // !_WPP_MYSQLDBMS_H_

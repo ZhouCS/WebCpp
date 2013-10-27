@@ -23,8 +23,8 @@
  * @date 2013-05-20
  */
 
-#ifndef _WPPTPLENGINE_H_
-#define _WPPTPLENGINE_H_
+#ifndef _WPP_WPPTPLENGINE_H_
+#define _WPP_WPPTPLENGINE_H_
 
 #include <MVC/Templates/AbstractTemplateEngine.h>
 
@@ -43,4 +43,4 @@ public:
 	virtual AbstractCompiledTemplate* compile(const Path& filePath) override;
 };
 
-#endif // !_WPPTPLENGINE_H_
+#endif // !_WPP_WPPTPLENGINE_H_

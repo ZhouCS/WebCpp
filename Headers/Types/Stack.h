@@ -23,8 +23,8 @@
  * @date 2012-02-13
  */
 
-#ifndef _TYPES_STACK_H_
-#define	_TYPES_STACK_H_
+#ifndef _WPP_TYPES_STACK_H_
+#define	_WPP_TYPES_STACK_H_
 
 #include <stack>
 
@@ -50,4 +50,4 @@ public:
 
 #include "Sources/Types/Stack.cpp"
 
-#endif // !_TYPES_STACK_H_
+#endif // !_WPP_TYPES_STACK_H_

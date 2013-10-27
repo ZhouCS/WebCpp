@@ -23,8 +23,8 @@
  * @date 2011-12-15
  */
 
-#ifndef _MVC_ROUTERS_VIEWROUTE_H_
-#define _MVC_ROUTERS_VIEWROUTE_H_
+#ifndef _WPP_MVC_ROUTERS_VIEWROUTE_H_
+#define _WPP_MVC_ROUTERS_VIEWROUTE_H_
 
 #include "MVC/Routers/AbstractRoute.h"
 
@@ -70,4 +70,4 @@ private:
 	AbstractView* _view;
 };
 
-#endif // !_MVC_ROUTERS_VIEWROUTE_H_
+#endif // !_WPP_MVC_ROUTERS_VIEWROUTE_H_

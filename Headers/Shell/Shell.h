@@ -23,8 +23,8 @@
  * @date 2013-05-18
  */
 
-#ifndef _SHELL_SHELL_H_
-#define _SHELL_SHELL_H_
+#ifndef _WPP_SHELL_SHELL_H_
+#define _WPP_SHELL_SHELL_H_
 
 #include "Shell/ShellCommand.h"
 #include "Types/Map.h"
@@ -56,4 +56,4 @@ private:
 	static bool _run;
 };
 
-#endif // !_SHELL_SHELL_H_
+#endif // !_WPP_SHELL_SHELL_H_

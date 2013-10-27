@@ -23,8 +23,8 @@
  * @date 2012-05-25
  */
 
-#ifndef _EXCEPTIONS_DB_H_
-#define	_EXCEPTIONS_DB_H_
+#ifndef _WPP_EXCEPTIONS_DB_H_
+#define	_WPP_EXCEPTIONS_DB_H_
 
 #include "Exceptions/Exception.h"
 
@@ -71,4 +71,4 @@ public:
 
 }
 
-#endif // !_EXCEPTIONS_DB_H_
+#endif // !_WPP_EXCEPTIONS_DB_H_

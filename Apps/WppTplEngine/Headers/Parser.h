@@ -23,8 +23,8 @@
  * @date 2013-06-09
  */
 
-#ifndef _PARSER_H_
-#define _PARSER_H_
+#ifndef _WPP_PARSER_H_
+#define _WPP_PARSER_H_
 
 #include <List>
 #include <Stack>
@@ -71,4 +71,4 @@ private:
 	Stack<Lexem>     _ops;
 };
 
-#endif // !_PARSER_H_
+#endif // !_WPP_PARSER_H_

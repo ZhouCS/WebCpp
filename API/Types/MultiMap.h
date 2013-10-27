@@ -23,8 +23,8 @@
  * @date 2011-12-23
  */
 
-#ifndef _TYPES_MULTIMAP_H_
-#define	_TYPES_MULTIMAP_H_
+#ifndef _WPP_TYPES_MULTIMAP_H_
+#define	_WPP_TYPES_MULTIMAP_H_
 
 #include <map>
 
@@ -147,4 +147,4 @@ public:
 
 #include "Sources/Types/MultiMap.cpp"
 
-#endif // !_TYPES_MULTIMAP_H_
+#endif // !_WPP_TYPES_MULTIMAP_H_

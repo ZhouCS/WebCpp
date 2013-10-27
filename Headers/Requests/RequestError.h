@@ -23,8 +23,8 @@
  * @date 2012-04-19
  */
 
-#ifndef _REQUESTS_REQUESTERROR_H_
-#define _REQUESTS_REQUESTERROR_H_
+#ifndef _WPP_REQUESTS_REQUESTERROR_H_
+#define _WPP_REQUESTS_REQUESTERROR_H_
 
 class Request;
 class Template;
@@ -53,4 +53,4 @@ private:
 	                              const String& e2Name);
 };
 
-#endif // !_REQUESTS_REQUESTERROR_H_
+#endif // !_WPP_REQUESTS_REQUESTERROR_H_

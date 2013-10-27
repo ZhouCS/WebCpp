@@ -23,8 +23,8 @@
  * @date 2011-11-26
  */
 
-#ifndef _TYPES_LIST_H_
-#define _TYPES_LIST_H_
+#ifndef _WPP_TYPES_LIST_H_
+#define _WPP_TYPES_LIST_H_
 
 #include <vector>
 
@@ -138,4 +138,4 @@ public:
 
 #include "Sources/Types/List.cpp"
 
-#endif // !_TYPES_LIST_H_
+#endif // !_WPP_TYPES_LIST_H_

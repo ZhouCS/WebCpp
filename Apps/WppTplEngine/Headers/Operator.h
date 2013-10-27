@@ -23,8 +23,8 @@
  * @date 2013-06-09
  */
 
-#ifndef _OPERATOR_H_
-#define _OPERATOR_H_
+#ifndef _WPP_OPERATOR_H_
+#define _WPP_OPERATOR_H_
 
 #include <List>
 
@@ -81,4 +81,4 @@ private:
 	static List<Operator*> _operators;
 };
 
-#endif // !_OPERATOR_H_
+#endif // !_WPP_OPERATOR_H_

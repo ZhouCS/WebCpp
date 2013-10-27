@@ -23,8 +23,8 @@
  * @date 2013-07-06
  */
 
-#ifndef _OPERATORS_MISCOPS_H_
-#define _OPERATORS_MISCOPS_H_
+#ifndef _WPP_OPERATORS_MISCOPS_H_
+#define _WPP_OPERATORS_MISCOPS_H_
 
 #include "Operator.h"
 
@@ -48,4 +48,4 @@ public:
 
 } // ns Operators
 
-#endif // !_OPERATORS_MISCOPS_H_
+#endif // !_WPP_OPERATORS_MISCOPS_H_

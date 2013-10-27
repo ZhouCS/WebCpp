@@ -23,8 +23,8 @@
  * @date 2011-12-04
  */
 
-#ifndef _MVC_ROUTERS_ROUTER_H_
-#define _MVC_ROUTERS_ROUTER_H_
+#ifndef _WPP_MVC_ROUTERS_ROUTER_H_
+#define _WPP_MVC_ROUTERS_ROUTER_H_
 
 #include "MVC/Routers/AbstractRouter.h"
 #include "MVC/Routers/AbstractRoute.h"
@@ -132,4 +132,4 @@ private:
 	static Map<String, AbstractRoute::Match> _cache;
 };
 
-#endif // !_MVC_ROUTERS_ROUTER_H_
+#endif // !_WPP_MVC_ROUTERS_ROUTER_H_

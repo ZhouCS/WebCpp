@@ -23,8 +23,8 @@
  * @date 2011-12-10
  */
 
-#ifndef _SITES_MODULE_H_
-#define _SITES_MODULE_H_
+#ifndef _WPP_SITES_MODULE_H_
+#define _WPP_SITES_MODULE_H_
 
 #include "Types/String.h"
 #include "Types/List.h"
@@ -176,4 +176,4 @@ private:
 	List<View*> _views;
 };
 
-#endif // !_SITES_MODULE_H_
+#endif // !_WPP_SITES_MODULE_H_

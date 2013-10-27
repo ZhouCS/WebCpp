@@ -23,8 +23,8 @@
  * @date 2012-01-15
  */
 
-#ifndef _TYPES_ORDEREDMAP_H_
-#define	_TYPES_ORDEREDMAP_H_
+#ifndef _WPP_TYPES_ORDEREDMAP_H_
+#define	_WPP_TYPES_ORDEREDMAP_H_
 
 #include <map>
 
@@ -141,4 +141,4 @@ public:
 
 #include "Sources/Types/OrderedMap.cpp"
 
-#endif // !_TYPES_ORDEREDMAP_H_
+#endif // !_WPP_TYPES_ORDEREDMAP_H_

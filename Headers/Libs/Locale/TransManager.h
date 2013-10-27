@@ -23,8 +23,8 @@
  * @date 2012-02-20
  */
 
-#ifndef _LIBS_LOCALE_TRANSMANAGER_H_
-#define	_LIBS_LOCALE_TRANSMANAGER_H_
+#ifndef _WPP_LIBS_LOCALE_TRANSMANAGER_H_
+#define	_WPP_LIBS_LOCALE_TRANSMANAGER_H_
 
 #include "Types/Map.h"
 
@@ -57,4 +57,4 @@ private:
 	Map<Module*, Map<String, TransContext*>> _contexts;
 };
 
-#endif // !_LIBS_LOCALE_TRANSMANAGER_H_
+#endif // !_WPP_LIBS_LOCALE_TRANSMANAGER_H_

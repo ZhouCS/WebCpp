@@ -23,8 +23,8 @@
  * @date 2013-05-18
  */
 
-#ifndef _CLIOPTIONS_H_
-#define _CLIOPTIONS_H_
+#ifndef _WPP_CLIOPTIONS_H_
+#define _WPP_CLIOPTIONS_H_
 
 #include "Types/String.h"
 
@@ -62,4 +62,4 @@ private:
 	int       _flags;
 };
 
-#endif // !_CLIOPTIONS_H_
+#endif // !_WPP_CLIOPTIONS_H_

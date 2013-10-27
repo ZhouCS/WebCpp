@@ -23,8 +23,8 @@
  * @date 2011-12-15
  */
 
-#ifndef _MVC_ABSTRACTVIEW_H_
-#define _MVC_ABSTRACTVIEW_H_
+#ifndef _WPP_MVC_ABSTRACTVIEW_H_
+#define _WPP_MVC_ABSTRACTVIEW_H_
 
 #include "Types/Map.h"
 #include "Types/String.h"
@@ -162,4 +162,4 @@ private:
 	AbstractView* _view;
 };
 
-#endif // !_MVC_ABSTRACTVIEW_H_
+#endif // !_WPP_MVC_ABSTRACTVIEW_H_

@@ -23,8 +23,8 @@
  * @date 2012-01-11
  */
 
-#ifndef _LIBS_IO_IODEVICE_H_
-#define	_LIBS_IO_IODEVICE_H_
+#ifndef _WPP_LIBS_IO_IODEVICE_H_
+#define	_WPP_LIBS_IO_IODEVICE_H_
 
 #include <iostream>
 
@@ -79,4 +79,4 @@ protected:
 	OpenMode _openMode;
 };
 
-#endif // !_LIBS_IO_IODEVICE_H_
+#endif // !_WPP_LIBS_IO_IODEVICE_H_

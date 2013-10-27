@@ -23,8 +23,8 @@
  * @date 2013-06-12
  */
 
-#ifndef _BLOCKS_INHERITANCEBLOCKS_H_
-#define _BLOCKS_INHERITANCEBLOCKS_H_
+#ifndef _WPP_BLOCKS_INHERITANCEBLOCKS_H_
+#define _WPP_BLOCKS_INHERITANCEBLOCKS_H_
 
 #include "Block.h"
 
@@ -71,4 +71,4 @@ private:
 
 } // ns Blocks
 
-#endif // !_BLOCKS_INHERITANCEBLOCKS_H_
+#endif // !_WPP_BLOCKS_INHERITANCEBLOCKS_H_

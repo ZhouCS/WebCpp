@@ -23,8 +23,8 @@
  * @date 2012-01-29
  */
 
-#ifndef _LIBS_SETTINGS_H_
-#define	_LIBS_SETTINGS_H_
+#ifndef _WPP_LIBS_SETTINGS_H_
+#define	_WPP_LIBS_SETTINGS_H_
 
 #include "Types/Map.h"
 #include "Types/String.h"
@@ -69,4 +69,4 @@ private:
 	Map<String, String> _values;
 };
 
-#endif // !_LIBS_SETTINGS_H_
+#endif // !_WPP_LIBS_SETTINGS_H_

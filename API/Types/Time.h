@@ -23,8 +23,8 @@
  * @date 2012-01-23
  */
 
-#ifndef _TYPES_TIME_H_
-#define	_TYPES_TIME_H_
+#ifndef _WPP_TYPES_TIME_H_
+#define	_WPP_TYPES_TIME_H_
 
 #include <boost/date_time/posix_time/posix_time.hpp>
 #include <boost/date_time/local_time/local_time.hpp>
@@ -89,4 +89,4 @@ private:
 	boost::local_time::time_zone_ptr _tz;
 };
 
-#endif // !_TYPES_TIME_H_
+#endif // !_WPP_TYPES_TIME_H_

@@ -23,8 +23,8 @@
  * @date 2011-12-20
  */
 
-#ifndef _TYPES_BYTEARRAY_H_
-#define	_TYPES_BYTEARRAY_H_
+#ifndef _WPP_TYPES_BYTEARRAY_H_
+#define	_WPP_TYPES_BYTEARRAY_H_
 
 #include "Types/String.h"
 
@@ -126,4 +126,4 @@ private:
 	static inline char _base64DigitValue(char ch);
 };
 
-#endif // !_TYPES_BYTEARRAY_H_
+#endif // !_WPP_TYPES_BYTEARRAY_H_

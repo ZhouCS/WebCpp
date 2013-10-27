@@ -23,8 +23,8 @@
  * @date 2012-02-20
  */
 
-#ifndef _LIBS_LOCALE_TRANSLATION_H_
-#define	_LIBS_LOCALE_TRANSLATION_H_
+#ifndef _WPP_LIBS_LOCALE_TRANSLATION_H_
+#define	_WPP_LIBS_LOCALE_TRANSLATION_H_
 
 #include "Libs/Locale/TransManager.h"
 
@@ -57,4 +57,4 @@ private:
 	String _destination;
 };
 
-#endif // !_LIBS_LOCALE_TRANSLATION_H_
+#endif // !_WPP_LIBS_LOCALE_TRANSLATION_H_

@@ -23,8 +23,8 @@
  * @date 2011-12-28
  */
 
-#ifndef _MYSQLRESULT_H_
-#define	_MYSQLRESULT_H_
+#ifndef _WPP_MYSQLRESULT_H_
+#define	_WPP_MYSQLRESULT_H_
 
 #include <DB/AbstractDbResult.h>
 
@@ -84,4 +84,4 @@ private:
 	bool _hasNext; // Ugly...
 };
 
-#endif // !_MYSQLRESULT_H_
+#endif // !_WPP_MYSQLRESULT_H_

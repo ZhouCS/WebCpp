@@ -23,8 +23,8 @@
  * @date 2011-12-23
  */
 
-#ifndef _OBJECT_H_
-#define	_OBJECT_H_
+#ifndef _WPP_OBJECT_H_
+#define	_WPP_OBJECT_H_
 
 #include "Types/Pair.h"
 #include "Types/String.h"
@@ -45,4 +45,4 @@ private:
 	MultiMap<String, Pair<Object*, void (Object::*)()>> _connections;
 };
 
-#endif // !_OBJECT_H_
+#endif // !_WPP_OBJECT_H_

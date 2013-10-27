@@ -23,8 +23,8 @@
  * @date 2013-06-29
  */
 
-#ifndef _FUNCTIONS_MATHFUNCS_H_
-#define _FUNCTIONS_MATHFUNCS_H_
+#ifndef _WPP_FUNCTIONS_MATHFUNCS_H_
+#define _WPP_FUNCTIONS_MATHFUNCS_H_
 
 #include <List>
 
@@ -37,4 +37,4 @@ Variant pow(Template* tpl, const List<Variant>& args);
 
 } // ns Functions
 
-#endif // !_FUNCTIONS_MATHFUNCS_H_
+#endif // !_WPP_FUNCTIONS_MATHFUNCS_H_

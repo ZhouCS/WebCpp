@@ -23,8 +23,8 @@
  * @date 2013-05-23
  */
 
-#ifndef _EXCEPTIONS_SEGFAULT_H_
-#define	_EXCEPTIONS_SEGFAULT_H_
+#ifndef _WPP_EXCEPTIONS_SEGFAULT_H_
+#define	_WPP_EXCEPTIONS_SEGFAULT_H_
 
 #include "Exceptions/Exception.h"
 
@@ -40,4 +40,4 @@ public:
 
 }
 
-#endif // !_EXCEPTIONS_SEGFAULT_H_
+#endif // !_WPP_EXCEPTIONS_SEGFAULT_H_

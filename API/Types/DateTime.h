@@ -23,8 +23,8 @@
  * @date 2012-01-23
  */
 
-#ifndef _TYPES_DATETIME_H_
-#define	_TYPES_DATETIME_H_
+#ifndef _WPP_TYPES_DATETIME_H_
+#define	_WPP_TYPES_DATETIME_H_
 
 #include "Types/Date.h"
 #include "Types/Time.h"
@@ -112,4 +112,4 @@ private:
 	Time _timeDuration;
 };
 
-#endif // !_TYPES_DATETIME_H_
+#endif // !_WPP_TYPES_DATETIME_H_

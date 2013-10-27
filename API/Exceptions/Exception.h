@@ -23,8 +23,8 @@
  * @date 2011-12-08
  */
 
-#ifndef _EXCEPTIONS_EXCEPTION_H_
-#define	_EXCEPTIONS_EXCEPTION_H_
+#ifndef _WPP_EXCEPTIONS_EXCEPTION_H_
+#define	_WPP_EXCEPTIONS_EXCEPTION_H_
 
 #include <exception>
 #include <stdint.h>
@@ -139,4 +139,4 @@ public:
 
 }
 
-#endif // !_EXCEPTIONS_EXCEPTION_H_
+#endif // !_WPP_EXCEPTIONS_EXCEPTION_H_

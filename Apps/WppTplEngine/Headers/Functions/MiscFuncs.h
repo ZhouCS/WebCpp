@@ -23,8 +23,8 @@
  * @date 2013-06-29
  */
 
-#ifndef _FUNCTIONS_MISCFUNCS_H_
-#define _FUNCTIONS_MISCFUNCS_H_
+#ifndef _WPP_FUNCTIONS_MISCFUNCS_H_
+#define _WPP_FUNCTIONS_MISCFUNCS_H_
 
 #include <List>
 
@@ -37,4 +37,4 @@ Variant dump(Template* tpl, const List<Variant>& args);
 
 }
 
-#endif // !_FUNCTIONS_MISCFUNCS_H_
+#endif // !_WPP_FUNCTIONS_MISCFUNCS_H_

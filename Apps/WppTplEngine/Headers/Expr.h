@@ -23,8 +23,8 @@
  * @date 2013-05-20
  */
 
-#ifndef _EXPR_H_
-#define _EXPR_H_
+#ifndef _WPP_EXPR_H_
+#define _WPP_EXPR_H_
 
 #include <List>
 
@@ -54,4 +54,4 @@ private:
 	ExprNode* _root;
 };
 
-#endif // !_EXPR_H_
+#endif // !_WPP_EXPR_H_

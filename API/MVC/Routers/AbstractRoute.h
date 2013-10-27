@@ -23,8 +23,8 @@
  * @date 2011-12-04
  */
 
-#ifndef _MVC_ROUTERS_ABSTRACTROUTE_H_
-#define _MVC_ROUTERS_ABSTRACTROUTE_H_
+#ifndef _WPP_MVC_ROUTERS_ABSTRACTROUTE_H_
+#define _WPP_MVC_ROUTERS_ABSTRACTROUTE_H_
 
 #include "Types/String.h"
 #include "Types/Map.h"
@@ -98,4 +98,4 @@ protected:
 	Map<String, String> _patterns;
 };
 
-#endif // !_MVC_ROUTERS_ABSTRACTROUTE_H_
+#endif // !_WPP_MVC_ROUTERS_ABSTRACTROUTE_H_

@@ -23,8 +23,8 @@
  * @date 2013-07-29
  */
 
-#ifndef _FUNCTION_H_
-#define _FUNCTION_H_
+#ifndef _WPP_FUNCTION_H_
+#define _WPP_FUNCTION_H_
 
 #include <List>
 #include <Map>
@@ -76,4 +76,4 @@ private:
 	static Map<String, Function> _filters;
 };
 
-#endif // !_FUNCTION_H_
+#endif // !_WPP_FUNCTION_H_

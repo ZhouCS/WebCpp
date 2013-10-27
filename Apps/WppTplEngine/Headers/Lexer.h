@@ -23,8 +23,8 @@
  * @date 2013-06-08
  */
 
-#ifndef _LEXER_H_
-#define _LEXER_H_
+#ifndef _WPP_LEXER_H_
+#define _WPP_LEXER_H_
 
 #include <String>
 #include <List>
@@ -98,4 +98,4 @@ private:
 	static OrderedMap<String, Lexem, std::greater<String>> _tokens;
 };
 
-#endif // !_LEXER_H_
+#endif // !_WPP_LEXER_H_

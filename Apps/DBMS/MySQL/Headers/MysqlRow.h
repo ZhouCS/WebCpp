@@ -23,8 +23,8 @@
  * @date 2011-12-28
  */
 
-#ifndef _MYSQLROW_H_
-#define	_MYSQLROW_H_
+#ifndef _WPP_MYSQLROW_H_
+#define	_WPP_MYSQLROW_H_
 
 #include <DB/AbstractDbRow.h>
 
@@ -67,4 +67,4 @@ private:
 	MYSQL_ROW _row;
 };
 
-#endif // !_MYSQLROW_H_
+#endif // !_WPP_MYSQLROW_H_

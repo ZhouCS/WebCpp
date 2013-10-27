@@ -23,8 +23,8 @@
  * @date 2011-11-24
  */
 
-#ifndef _TYPES_VARIANT_H_
-#define _TYPES_VARIANT_H_
+#ifndef _WPP_TYPES_VARIANT_H_
+#define _WPP_TYPES_VARIANT_H_
 
 #include <stdint.h>
 
@@ -132,4 +132,4 @@ private:
 	};
 };
 
-#endif // !_TYPES_VARIANT_H_
+#endif // !_WPP_TYPES_VARIANT_H_

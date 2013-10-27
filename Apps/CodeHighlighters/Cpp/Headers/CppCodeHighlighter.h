@@ -23,8 +23,8 @@
  * @date 2012-05-25
  */
 
-#ifndef _CPPCODEHIGHLIGHTER_H_
-#define	_CPPCODEHIGHLIGHTER_H_
+#ifndef _WPP_CPPCODEHIGHLIGHTER_H_
+#define	_WPP_CPPCODEHIGHLIGHTER_H_
 
 #include <CodeHighlighter>
 #include <Plugin>
@@ -49,5 +49,5 @@ private:
 
 PLUGIN_INSTANCE(CppCodeHighlighter)
 
-#endif // !_CPPCODEHIGHLIGHTER_H_
+#endif // !_WPP_CPPCODEHIGHLIGHTER_H_
 

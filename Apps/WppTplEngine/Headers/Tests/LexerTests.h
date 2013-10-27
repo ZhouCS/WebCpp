@@ -23,9 +23,9 @@
  * @date 2013-08-31
  */
 
-#ifndef _TESTS_LEXERTESTS_H_
-#define _TESTS_LEXERTESTS_H_
+#ifndef _WPP_TESTS_LEXERTESTS_H_
+#define _WPP_TESTS_LEXERTESTS_H_
 
 
 
-#endif // !_TESTS_LEXERTESTS_H_
+#endif // !_WPP_TESTS_LEXERTESTS_H_

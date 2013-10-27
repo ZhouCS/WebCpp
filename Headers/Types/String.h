@@ -23,8 +23,8 @@
  * @date 2011-11-24
  */
 
-#ifndef _TYPES_STRING_H_
-#define _TYPES_STRING_H_
+#ifndef _WPP_TYPES_STRING_H_
+#define _WPP_TYPES_STRING_H_
 
 #include <string>
 
@@ -716,4 +716,4 @@ String operator%(const String& pattern, const String& arg1);
 
 #include "Types/StringList.h"
 
-#endif // !_TYPES_STRING_H_
+#endif // !_WPP_TYPES_STRING_H_

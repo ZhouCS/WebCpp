@@ -23,8 +23,8 @@
  * @date 2013-07-31
  */
 
-#ifndef _OPERATORS_LOGICOPS_H_
-#define _OPERATORS_LOGICOPS_H_
+#ifndef _WPP_OPERATORS_LOGICOPS_H_
+#define _WPP_OPERATORS_LOGICOPS_H_
 
 #include "Operator.h"
 
@@ -56,4 +56,4 @@ public:
 
 } // ns Operators
 
-#endif // !_OPERATORS_LOGICOPS_H_
+#endif // !_WPP_OPERATORS_LOGICOPS_H_

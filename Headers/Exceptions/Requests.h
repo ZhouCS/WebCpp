@@ -23,8 +23,8 @@
  * @date 2011-12-31
  */
 
-#ifndef _EXCEPTIONS_REQUESTS_H_
-#define	_EXCEPTIONS_REQUESTS_H_
+#ifndef _WPP_EXCEPTIONS_REQUESTS_H_
+#define	_WPP_EXCEPTIONS_REQUESTS_H_
 
 #include "Exceptions/Exception.h"
 
@@ -90,4 +90,4 @@ public:
 
 }
 
-#endif // !_EXCEPTIONS_REQUESTS_H_
+#endif // !_WPP_EXCEPTIONS_REQUESTS_H_

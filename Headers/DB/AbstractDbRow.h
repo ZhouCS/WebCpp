@@ -23,8 +23,8 @@
  * @date 2011-12-28
  */
 
-#ifndef _DB_ABSTRACTDBROW_H_
-#define	_DB_ABSTRACTDBROW_H_
+#ifndef _WPP_DB_ABSTRACTDBROW_H_
+#define	_WPP_DB_ABSTRACTDBROW_H_
 
 #include "Types/String.h"
 
@@ -126,4 +126,4 @@ private:
 	AbstractDbRow* _row;
 };
 
-#endif // !_DB_ABSTRACTDBROW_H_
+#endif // !_WPP_DB_ABSTRACTDBROW_H_

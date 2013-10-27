@@ -23,8 +23,8 @@
  * @date 2011-11-19
  */
 
-#ifndef _LIBS_THREAD_H_
-#define _LIBS_THREAD_H_
+#ifndef _WPP_LIBS_THREAD_H_
+#define _WPP_LIBS_THREAD_H_
 
 #include <pthread.h>
 
@@ -112,4 +112,4 @@ protected:
 	void* (*_funcPtr)(void*);
 };
 
-#endif // !_LIBS_THREAD_H_
+#endif // !_WPP_LIBS_THREAD_H_

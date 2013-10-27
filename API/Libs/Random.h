@@ -23,8 +23,8 @@
  * @date 2012-01-22
  */
 
-#ifndef _LIBS_RANDOM_H_
-#define	_LIBS_RANDOM_H_
+#ifndef _WPP_LIBS_RANDOM_H_
+#define	_WPP_LIBS_RANDOM_H_
 
 class String;
 template<typename T> class List;
@@ -67,4 +67,4 @@ protected:
 	static List<char> charsList(int charsOpt);
 };
 
-#endif // !_LIBS_RANDOM_H_
+#endif // !_WPP_LIBS_RANDOM_H_

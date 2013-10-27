@@ -23,8 +23,8 @@
  * @date 2011-11-24
  */
 
-#ifndef _REQUESTS_REQUESTSTREAM_H_
-#define _REQUESTS_REQUESTSTREAM_H_
+#ifndef _WPP_REQUESTS_REQUESTSTREAM_H_
+#define _WPP_REQUESTS_REQUESTSTREAM_H_
 
 #include <fcgio.h>
 
@@ -66,4 +66,4 @@ public:
 	~RequestInputStream();
 };
 
-#endif // !_REQUESTS_REQUESTSTREAM_H_
+#endif // !_WPP_REQUESTS_REQUESTSTREAM_H_

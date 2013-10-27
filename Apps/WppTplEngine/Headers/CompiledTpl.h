@@ -23,8 +23,8 @@
  * @date 2013-05-20
  */
 
-#ifndef _COMPILEDTPL_H_
-#define _COMPILEDTPL_H_
+#ifndef _WPP_COMPILEDTPL_H_
+#define _WPP_COMPILEDTPL_H_
 
 #include <MVC/Templates/AbstractCompiledTemplate.h>
 
@@ -61,4 +61,4 @@ private:
 	Block* _rootBlock;
 };
 
-#endif // !_COMPILEDTPL_H_
+#endif // !_WPP_COMPILEDTPL_H_

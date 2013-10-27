@@ -23,8 +23,8 @@
  * @date 2012-05-25
  */
 
-#ifndef _LIBS_CODEHIGHLIGHTER_H_
-#define	_LIBS_CODEHIGHLIGHTER_H_
+#ifndef _WPP_LIBS_CODEHIGHLIGHTER_H_
+#define	_WPP_LIBS_CODEHIGHLIGHTER_H_
 
 #include "Types/String.h"
 #include "Types/Map.h"
@@ -135,4 +135,4 @@ private:
 	OrderedMap<int, StyleMarker> _styles;
 };
 
-#endif // !_LIBS_CODEHIGHLIGHTER_H_
+#endif // !_WPP_LIBS_CODEHIGHLIGHTER_H_

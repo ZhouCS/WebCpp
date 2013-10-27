@@ -23,8 +23,8 @@
  * @date 2011-12-19
  */
 
-#ifndef _SERVICES_CLIADMINSERVICE_H_
-#define	_SERVICES_CLIADMINSERVICE_H_
+#ifndef _WPP_SERVICES_CLIADMINSERVICE_H_
+#define	_WPP_SERVICES_CLIADMINSERVICE_H_
 
 #include "Services/AbstractService.h"
 
@@ -34,4 +34,4 @@ public:
 
 };
 
-#endif // !_SERVICES_CLIADMINSERVICE_H_
+#endif // !_WPP_SERVICES_CLIADMINSERVICE_H_

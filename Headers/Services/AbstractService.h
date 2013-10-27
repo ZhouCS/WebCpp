@@ -23,8 +23,8 @@
  * @date 2011-12-19
  */
 
-#ifndef _SERVICES_ABSTRACTSERVICES_H_
-#define	_SERVICES_ABSTRACTSERVICES_H_
+#ifndef _WPP_SERVICES_ABSTRACTSERVICES_H_
+#define	_WPP_SERVICES_ABSTRACTSERVICES_H_
 
 /**
  * @class AbstractService Services/AbstractService.h <AbstractService>
@@ -36,4 +36,4 @@ public:
 
 };
 
-#endif // !_SERVICES_ABSTRACTSERVICES_H_
+#endif // !_WPP_SERVICES_ABSTRACTSERVICES_H_

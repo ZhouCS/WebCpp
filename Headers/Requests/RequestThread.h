@@ -23,9 +23,9 @@
  * @date 2011-11-21
  */
 
-#ifndef _REQUESTS_REQUESTTHREAD_H_
-#define _REQUESTS_REQUESTTHREAD_H_
+#ifndef _WPP_REQUESTS_REQUESTTHREAD_H_
+#define _WPP_REQUESTS_REQUESTTHREAD_H_
 
 void* fcgiProcessingLoop(void* arg = nullptr);
 
-#endif // !_REQUESTS_REQUESTTHREAD_H_
+#endif // !_WPP_REQUESTS_REQUESTTHREAD_H_

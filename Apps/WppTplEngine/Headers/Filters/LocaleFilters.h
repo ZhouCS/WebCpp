@@ -23,8 +23,8 @@
  * @date 2013-08-31
  */
 
-#ifndef _FILTERS_LOCALEFILTERS_H_
-#define _FILTERS_LOCALEFILTERS_H_
+#ifndef _WPP_FILTERS_LOCALEFILTERS_H_
+#define _WPP_FILTERS_LOCALEFILTERS_H_
 
 #include <List>
 
@@ -38,4 +38,4 @@ Variant money(Template* tpl, const List<Variant>& args);
 
 } // ns Filters
 
-#endif // !_FILTERS_LOCALEFILTERS_H_
+#endif // !_WPP_FILTERS_LOCALEFILTERS_H_

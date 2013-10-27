@@ -23,8 +23,8 @@
  * @date 2011-12-11
  */
 
-#ifndef _EXCEPTIONS_PLUGINS_H_
-#define	_EXCEPTIONS_PLUGINS_H_
+#ifndef _WPP_EXCEPTIONS_PLUGINS_H_
+#define	_WPP_EXCEPTIONS_PLUGINS_H_
 
 #include "Exceptions/Exception.h"
 
@@ -73,4 +73,4 @@ public:
 
 }
 
-#endif // !_EXCEPTIONS_PLUGINS_H_
+#endif // !_WPP_EXCEPTIONS_PLUGINS_H_

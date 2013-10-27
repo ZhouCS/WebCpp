@@ -23,8 +23,8 @@
  * @date 2012-06-26
  */
 
-#ifndef _DB_DATABASESYSTEM_H_
-#define	_DB_DATABASESYSTEM_H_
+#ifndef _WPP_DB_DATABASESYSTEM_H_
+#define	_WPP_DB_DATABASESYSTEM_H_
 
 #include "Types/String.h"
 
@@ -94,4 +94,4 @@ private:
 	Plugin* _plugin;
 };
 
-#endif // !_DB_DATABASESYSTEM_H_
+#endif // !_WPP_DB_DATABASESYSTEM_H_

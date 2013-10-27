@@ -23,8 +23,8 @@
  * @date 2011-12-25
  */
 
-#ifndef _LIBS_CHRONO_H_
-#define	_LIBS_CHRONO_H_
+#ifndef _WPP_LIBS_CHRONO_H_
+#define	_WPP_LIBS_CHRONO_H_
 
 //#include <sys/time.h>
 #include <chrono>
@@ -78,4 +78,4 @@ private:
 	std::chrono::time_point<std::chrono::system_clock> _startTime;
 };
 
-#endif // !_LIBS_CHRONO_H_
+#endif // !_WPP_LIBS_CHRONO_H_

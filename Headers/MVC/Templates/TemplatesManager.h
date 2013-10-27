@@ -23,8 +23,8 @@
  * @date 2012-01-01
  */
 
-#ifndef _MVC_TEMPLATES_TEMPLATESMANAGER_H_
-#define	_MVC_TEMPLATES_TEMPLATESMANAGER_H_
+#ifndef _WPP_MVC_TEMPLATES_TEMPLATESMANAGER_H_
+#define	_WPP_MVC_TEMPLATES_TEMPLATESMANAGER_H_
 
 #include "Types/Map.h"
 
@@ -100,4 +100,4 @@ private:
 	AbstractTemplateEngine* _defaultEngine;
 };
 
-#endif // !_MVC_TEMPLATES_TEMPLATESMANAGER_H_
+#endif // !_WPP_MVC_TEMPLATES_TEMPLATESMANAGER_H_

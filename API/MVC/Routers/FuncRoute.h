@@ -23,8 +23,8 @@
  * @date 2012-07-16
  */
 
-#ifndef _MVC_ROUTERS_FUNCROUTE_H_
-#define _MVC_ROUTERS_FUNCROUTE_H_
+#ifndef _WPP_MVC_ROUTERS_FUNCROUTE_H_
+#define _WPP_MVC_ROUTERS_FUNCROUTE_H_
 
 #include "MVC/Routers/AbstractRoute.h"
 
@@ -63,4 +63,4 @@ private:
 	void (*_funcPtr)(Request*, const Map<String, String>&);
 };
 
-#endif // !_MVC_ROUTERS_FUNCROUTE_H_
+#endif // !_WPP_MVC_ROUTERS_FUNCROUTE_H_

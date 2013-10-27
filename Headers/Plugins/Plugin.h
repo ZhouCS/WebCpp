@@ -23,8 +23,8 @@
  * @date 2011-12-10
  */
 
-#ifndef _PLUGINS_PLUGIN_H_
-#define	_PLUGINS_PLUGIN_H_
+#ifndef _WPP_PLUGINS_PLUGIN_H_
+#define	_WPP_PLUGINS_PLUGIN_H_
 
 #include "Types/Path.h"
 #include "Exceptions/Plugins.h"
@@ -97,4 +97,4 @@ private:
 	void* _handle;
 };
 
-#endif // !_PLUGINS_PLUGIN_H_
+#endif // !_WPP_PLUGINS_PLUGIN_H_

@@ -23,8 +23,8 @@
  * @date 2012-01-11
  */
 
-#ifndef _LIBS_IO_FILE_H_
-#define	_LIBS_IO_FILE_H_
+#ifndef _WPP_LIBS_IO_FILE_H_
+#define	_WPP_LIBS_IO_FILE_H_
 
 #include <fstream>
 #include <sys/stat.h>
@@ -91,4 +91,4 @@ private:
 	struct stat _stat;
 };
 
-#endif // !_LIBS_IO_FILE_H_
+#endif // !_WPP_LIBS_IO_FILE_H_

@@ -35,8 +35,8 @@
  * $Id: sha2.h,v 1.1 2001/11/08 00:02:01 adg Exp adg $
  */
 
-#ifndef __SHA2_H__
-#define __SHA2_H__
+#ifndef _WPP__SHA2_H__
+#define _WPP__SHA2_H__
 
 #ifdef __cplusplus
 extern "C" {
@@ -196,6 +196,6 @@ char* SHA512_Data();
 }
 #endif /* __cplusplus */
 
-#endif /* __SHA2_H__ */
+#endif /* _WPP__SHA2_H__ */
 
 #endif

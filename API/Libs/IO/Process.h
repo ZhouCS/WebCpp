@@ -23,8 +23,8 @@
  * @date 2012-04-25
  */
 
-#ifndef _LIBS_IO_PROCESS_H_
-#define	_LIBS_IO_PROCESS_H_
+#ifndef _WPP_LIBS_IO_PROCESS_H_
+#define	_WPP_LIBS_IO_PROCESS_H_
 
 #include <unistd.h>
 
@@ -83,4 +83,4 @@ private:
 	int _exitStatus;
 };
 
-#endif // !_LIBS_IO_PROCESS_H_
+#endif // !_WPP_LIBS_IO_PROCESS_H_

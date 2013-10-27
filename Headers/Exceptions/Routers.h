@@ -23,8 +23,8 @@
  * @date 2011-12-10
  */
 
-#ifndef _EXCEPTIONS_ROUTERS_H_
-#define	_EXCEPTIONS_ROUTERS_H_
+#ifndef _WPP_EXCEPTIONS_ROUTERS_H_
+#define	_WPP_EXCEPTIONS_ROUTERS_H_
 
 #include "Exceptions/Exception.h"
 
@@ -55,4 +55,4 @@ public:
 
 }
 
-#endif // !_EXCEPTIONS_ROUTERS_H_
+#endif // !_WPP_EXCEPTIONS_ROUTERS_H_

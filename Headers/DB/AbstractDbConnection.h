@@ -23,8 +23,8 @@
  * @date 2011-12-18
  */
 
-#ifndef _DB_ABSTRACTDBCONNECTION_H_
-#define	_DB_ABSTRACTDBCONNECTION_H_
+#ifndef _WPP_DB_ABSTRACTDBCONNECTION_H_
+#define	_WPP_DB_ABSTRACTDBCONNECTION_H_
 
 class String;
 class AbstractDbResult;
@@ -84,4 +84,4 @@ protected:
 	virtual AbstractDbResult* queryExec(const String& sql) = 0;
 };
 
-#endif // !_DB_ABSTRACTDBCONNECTION_H_
+#endif // !_WPP_DB_ABSTRACTDBCONNECTION_H_

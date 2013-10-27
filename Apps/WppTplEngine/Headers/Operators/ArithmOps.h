@@ -23,8 +23,8 @@
  * @date 2013-06-09
  */
 
-#ifndef _OPERATORS_ARITHMOPS_H_
-#define _OPERATORS_ARITHMOPS_H_
+#ifndef _WPP_OPERATORS_ARITHMOPS_H_
+#define _WPP_OPERATORS_ARITHMOPS_H_
 
 #include "Operator.h"
 
@@ -72,4 +72,4 @@ public:
 
 } // ns Operators
 
-#endif // !_OPERATORS_ARITHMOPS_H_
+#endif // !_WPP_OPERATORS_ARITHMOPS_H_

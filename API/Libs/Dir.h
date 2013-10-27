@@ -23,8 +23,8 @@
  * @date 2012-02-22
  */
 
-#ifndef _LIBS_DIR_H_
-#define	_LIBS_DIR_H_
+#ifndef _WPP_LIBS_DIR_H_
+#define	_WPP_LIBS_DIR_H_
 
 #include "Types/Path.h"
 
@@ -70,4 +70,4 @@ private:
 	Path _path;
 };
 
-#endif // !_LIBS_DIR_H_
+#endif // !_WPP_LIBS_DIR_H_

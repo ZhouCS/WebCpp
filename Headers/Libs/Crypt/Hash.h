@@ -23,8 +23,8 @@
  * @date 2011-12-20
  */
 
-#ifndef _LIBS_CRYPT_HASH_H_
-#define _LIBS_CRYPT_HASH_H_
+#ifndef _WPP_LIBS_CRYPT_HASH_H_
+#define _WPP_LIBS_CRYPT_HASH_H_
 
 #include "Libs/Crypt/Sha2.h"
 
@@ -77,4 +77,4 @@ private:
 	SHA512_CTX _contextSha512;
 };
 
-#endif // !_LIBS_CRYPT_HASH_H_
+#endif // !_WPP_LIBS_CRYPT_HASH_H_

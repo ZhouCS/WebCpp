@@ -23,8 +23,8 @@
  * @date 2013-06-08
  */
 
-#ifndef _EXPRNODE_H_
-#define _EXPRNODE_H_
+#ifndef _WPP_EXPRNODE_H_
+#define _WPP_EXPRNODE_H_
 
 #include "Function.h"
 
@@ -156,4 +156,4 @@ private:
 	StringList _keys;
 };
 
-#endif // !_EXPRNODE_H_
+#endif // !_WPP_EXPRNODE_H_

@@ -23,8 +23,8 @@
  * @date 2012-03-24
  */
 
-#ifndef _LIBS_WML_WMLDOCUMENT_H_
-#define	_LIBS_WML_WMLDOCUMENT_H_
+#ifndef _WPP_LIBS_WML_WMLDOCUMENT_H_
+#define	_WPP_LIBS_WML_WMLDOCUMENT_H_
 
 #include <yaml.h>
 
@@ -45,4 +45,4 @@ private:
 	yaml_parser_t _parser;
 };
 
-#endif // !_LIBS_WML_WMLDOCUMENT_H_
+#endif // !_WPP_LIBS_WML_WMLDOCUMENT_H_

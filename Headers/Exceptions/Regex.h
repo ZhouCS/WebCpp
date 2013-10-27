@@ -23,8 +23,8 @@
  * @date 2011-12-08
  */
 
-#ifndef _EXCEPTIONS_REGEX_H_
-#define	_EXCEPTIONS_REGEX_H_
+#ifndef _WPP_EXCEPTIONS_REGEX_H_
+#define	_WPP_EXCEPTIONS_REGEX_H_
 
 #include "Exceptions/Exception.h"
 
@@ -57,4 +57,4 @@ private:
 
 }
 
-#endif // !_EXCEPTIONS_REGEX_H_
+#endif // !_WPP_EXCEPTIONS_REGEX_H_

@@ -23,8 +23,8 @@
  * @date 2012-01-16
  */
 
-#ifndef _REQUESTS_USERAGENT_H_
-#define	_REQUESTS_USERAGENT_H_
+#ifndef _WPP_REQUESTS_USERAGENT_H_
+#define	_WPP_REQUESTS_USERAGENT_H_
 
 #include "Types/String.h"
 #include "Types/Version.h"
@@ -95,4 +95,4 @@ private:
 	ProcArch _procArch;
 };
 
-#endif // !_REQUESTS_USERAGENT_H_
+#endif // !_WPP_REQUESTS_USERAGENT_H_

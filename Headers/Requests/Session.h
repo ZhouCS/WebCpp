@@ -23,8 +23,8 @@
  * @date 2012-01-31
  */
 
-#ifndef _REQUESTS_SESSION_H_
-#define	_REQUESTS_SESSION_H_
+#ifndef _WPP_REQUESTS_SESSION_H_
+#define	_WPP_REQUESTS_SESSION_H_
 
 #include "Types/String.h"
 #include "Types/Map.h"
@@ -94,4 +94,4 @@ private:
 	Map<String, String> _values;
 };
 
-#endif // !_REQUESTS_SESSION_H_
+#endif // !_WPP_REQUESTS_SESSION_H_

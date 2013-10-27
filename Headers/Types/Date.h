@@ -23,8 +23,8 @@
  * @date 2012-01-23
  */
 
-#ifndef _TYPES_DATE_H_
-#define	_TYPES_DATE_H_
+#ifndef _WPP_TYPES_DATE_H_
+#define	_WPP_TYPES_DATE_H_
 
 #include <boost/date_time/gregorian/greg_date.hpp>
 
@@ -142,4 +142,4 @@ private:
 	int _days;
 };
 
-#endif // !_TYPES_DATE_H_
+#endif // !_WPP_TYPES_DATE_H_

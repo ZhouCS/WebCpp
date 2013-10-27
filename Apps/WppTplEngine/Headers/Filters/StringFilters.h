@@ -23,8 +23,8 @@
  * @date 2013-07-31
  */
 
-#ifndef _FILTERS_STRINGFILTERS_H_
-#define _FILTERS_STRINGFILTERS_H_
+#ifndef _WPP_FILTERS_STRINGFILTERS_H_
+#define _WPP_FILTERS_STRINGFILTERS_H_
 
 #include <List>
 
@@ -41,4 +41,4 @@ Variant codeHighlight(Template* tpl, const List<Variant>& args);
 
 } // ns Filters
 
-#endif // !_FILTERS_STRINGFILTERS_H_
+#endif // !_WPP_FILTERS_STRINGFILTERS_H_

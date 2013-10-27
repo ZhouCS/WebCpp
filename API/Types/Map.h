@@ -23,8 +23,8 @@
  * @date 2011-12-04
  */
 
-#ifndef _TYPES_MAP_H_
-#define _TYPES_MAP_H_
+#ifndef _WPP_TYPES_MAP_H_
+#define _WPP_TYPES_MAP_H_
 
 #include <unordered_map>
 
@@ -172,4 +172,4 @@ REGISTER_HASH(String)
 
 #include "Sources/Types/Map.cpp"
 
-#endif // !_TYPES_MAP_H_
+#endif // !_WPP_TYPES_MAP_H_

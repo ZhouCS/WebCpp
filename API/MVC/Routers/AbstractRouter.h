@@ -23,8 +23,8 @@
  * @date 2011-12-04
  */
 
-#ifndef _MVC_ROUTERS_ABSTRACTROUTER_H_
-#define _MVC_ROUTERS_ABSTRACTROUTER_H_
+#ifndef _WPP_MVC_ROUTERS_ABSTRACTROUTER_H_
+#define _WPP_MVC_ROUTERS_ABSTRACTROUTER_H_
 
 class String;
 class Request;
@@ -51,4 +51,4 @@ public:
 	                            const String& lang) = 0;
 };
 
-#endif // !_MVC_ROUTERS_ABSTRACTROUTER_H_
+#endif // !_WPP_MVC_ROUTERS_ABSTRACTROUTER_H_

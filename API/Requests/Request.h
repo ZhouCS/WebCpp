@@ -23,8 +23,8 @@
  * @date 2011-11-23
  */
 
-#ifndef _REQUESTS_REQUEST_H_
-#define _REQUESTS_REQUEST_H_
+#ifndef _WPP_REQUESTS_REQUEST_H_
+#define _WPP_REQUESTS_REQUEST_H_
 
 #include "Types/String.h"
 #include "Types/Map.h"
@@ -353,4 +353,4 @@ private:
 	String _path;
 };
 
-#endif // !_REQUESTS_REQUEST_H_
+#endif // !_WPP_REQUESTS_REQUEST_H_

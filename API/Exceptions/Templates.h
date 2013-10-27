@@ -23,8 +23,8 @@
  * @date 2012-07-01
  */
 
-#ifndef _EXCEPTIONS_TEMPLATES_H_
-#define	_EXCEPTIONS_TEMPLATES_H_
+#ifndef _WPP_EXCEPTIONS_TEMPLATES_H_
+#define	_WPP_EXCEPTIONS_TEMPLATES_H_
 
 #include "Exceptions/Exception.h"
 #include "MVC/Templates/AbstractCompiledTemplate.h"
@@ -77,4 +77,4 @@ public:
 
 }
 
-#endif // !_EXCEPTIONS_TEMPLATES_H_
+#endif // !_WPP_EXCEPTIONS_TEMPLATES_H_

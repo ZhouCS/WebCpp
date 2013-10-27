@@ -23,8 +23,8 @@
  * @date 2012-07-15
  */
 
-#ifndef _REQUESTS_REQUESTPROFILE_H_
-#define _REQUESTS_REQUESTPROFILE_H_
+#ifndef _WPP_REQUESTS_REQUESTPROFILE_H_
+#define _WPP_REQUESTS_REQUESTPROFILE_H_
 
 #include "Types/Map.h"
 
@@ -87,4 +87,4 @@ private:
 	Map<int, int> _counters;
 };
 
-#endif // !_REQUESTS_REQUESTPROFILE_H_
+#endif // !_WPP_REQUESTS_REQUESTPROFILE_H_

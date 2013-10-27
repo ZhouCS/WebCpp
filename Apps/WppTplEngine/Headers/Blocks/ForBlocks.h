@@ -23,8 +23,8 @@
  * @date 2013-06-30
  */
 
-#ifndef _BLOCKS_FORBLOCKS_H_
-#define _BLOCKS_FORBLOCKS_H_
+#ifndef _WPP_BLOCKS_FORBLOCKS_H_
+#define _WPP_BLOCKS_FORBLOCKS_H_
 
 #include "Block.h"
 
@@ -62,4 +62,4 @@ public:
 
 } // ns Blocks
 
-#endif // !_BLOCKS_FORBLOCKS_H_
+#endif // !_WPP_BLOCKS_FORBLOCKS_H_

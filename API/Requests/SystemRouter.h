@@ -23,8 +23,8 @@
  * @date 2012-07-15
  */
 
-#ifndef _REQUESTS_SYSTEMROUTER_H_
-#define _REQUESTS_SYSTEMROUTER_H_
+#ifndef _WPP_REQUESTS_SYSTEMROUTER_H_
+#define _WPP_REQUESTS_SYSTEMROUTER_H_
 
 #include "MVC/Routers/Router.h"
 
@@ -44,4 +44,4 @@ private:
 	static void profile(Request* request, const Map<String, String>& args);
 };
 
-#endif // !_REQUESTS_SYSTEMROUTER_H_
+#endif // !_WPP_REQUESTS_SYSTEMROUTER_H_

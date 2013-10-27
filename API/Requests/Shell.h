@@ -23,8 +23,8 @@
  * @date 2013-05-18
  */
 
-#ifndef _REQUESTS_SHELL_H_
-#define _REQUESTS_SHELL_H_
+#ifndef _WPP_REQUESTS_SHELL_H_
+#define _WPP_REQUESTS_SHELL_H_
 
 class StringList;
 class String;
@@ -43,4 +43,4 @@ private:
 	static bool _run;
 };
 
-#endif // !_REQUESTS_SHELL_H_
+#endif // !_WPP_REQUESTS_SHELL_H_

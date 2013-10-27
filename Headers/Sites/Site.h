@@ -23,8 +23,8 @@
  * @date 2011-12-11
  */
 
-#ifndef _SITES_SITE_H_
-#define	_SITES_SITE_H_
+#ifndef _WPP_SITES_SITE_H_
+#define	_WPP_SITES_SITE_H_
 
 #include "Types/List.h"
 
@@ -117,4 +117,4 @@ private:
 	AbstractDbConnection* _db;
 };
 
-#endif // !_SITES_SITE_H_
+#endif // !_WPP_SITES_SITE_H_

@@ -23,8 +23,8 @@
  * @date 2011-12-15
  */
 
-#ifndef _MVC_TEMPLATES_TEMPLATE_H_
-#define _MVC_TEMPLATES_TEMPLATE_H_
+#ifndef _WPP_MVC_TEMPLATES_TEMPLATE_H_
+#define _WPP_MVC_TEMPLATES_TEMPLATE_H_
 
 #include "MVC/AbstractView.h"
 #include "Types/Path.h"
@@ -133,4 +133,4 @@ private:
 	AbstractCompiledTemplate* _compiled;
 };
 
-#endif // !_MVC_TEMPLATES_TEMPLATE_H_
+#endif // !_WPP_MVC_TEMPLATES_TEMPLATE_H_

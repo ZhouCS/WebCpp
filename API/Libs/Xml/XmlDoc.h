@@ -23,8 +23,8 @@
  * @date 2012-02-21
  */
 
-#ifndef _LIBS_XML_XMLDOC_H_
-#define	_LIBS_XML_XMLDOC_H_
+#ifndef _WPP_LIBS_XML_XMLDOC_H_
+#define	_WPP_LIBS_XML_XMLDOC_H_
 
 #include "Libs/Xml/XmlNode.h"
 
@@ -45,4 +45,4 @@ private:
 	pugi::xml_document _doc;
 };
 
-#endif // !_LIBS_XML_XMLDOC_H_
+#endif // !_WPP_LIBS_XML_XMLDOC_H_

@@ -23,8 +23,8 @@
  * @date 2012-02-20
  */
 
-#ifndef _LIBS_LOCALE_TRANSCONTEXT_H_
-#define	_LIBS_LOCALE_TRANSCONTEXT_H_
+#ifndef _WPP_LIBS_LOCALE_TRANSCONTEXT_H_
+#define	_WPP_LIBS_LOCALE_TRANSCONTEXT_H_
 
 #include "Types/String.h"
 #include "Types/Map.h"
@@ -74,4 +74,4 @@ private:
 	Map<String, Map<String, Translation*>> _translations;
 };
 
-#endif // !_LIBS_LOCALE_TRANSCONTEXT_H_
+#endif // !_WPP_LIBS_LOCALE_TRANSCONTEXT_H_

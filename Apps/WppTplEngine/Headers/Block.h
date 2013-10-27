@@ -23,8 +23,8 @@
  * @date 2013-05-20
  */
 
-#ifndef _BLOCK_H_
-#define _BLOCK_H_
+#ifndef _WPP_BLOCK_H_
+#define _WPP_BLOCK_H_
 
 #include <String>
 #include <Map>
@@ -107,4 +107,4 @@ private:
 	static Map<String, Block*> _blocks;
 };
 
-#endif // !_BLOCK_H_
+#endif // !_WPP_BLOCK_H_

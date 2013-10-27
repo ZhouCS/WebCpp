@@ -23,8 +23,8 @@
  * @date 2011-12-07
  */
 
-#ifndef _MVC_ROUTERS_ROUTE_H_
-#define _MVC_ROUTERS_ROUTE_H_
+#ifndef _WPP_MVC_ROUTERS_ROUTE_H_
+#define _WPP_MVC_ROUTERS_ROUTE_H_
 
 #include "MVC/Routers/AbstractRoute.h"
 
@@ -74,4 +74,4 @@ protected:
 	String _action;
 };
 
-#endif // !_MVC_ROUTERS_ROUTE_H_
+#endif // !_WPP_MVC_ROUTERS_ROUTE_H_

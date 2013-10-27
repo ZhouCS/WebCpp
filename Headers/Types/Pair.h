@@ -23,8 +23,8 @@
  * @date 2011-12-07
  */
 
-#ifndef _TYPES_PAIR_H_
-#define	_TYPES_PAIR_H_
+#ifndef _WPP_TYPES_PAIR_H_
+#define	_WPP_TYPES_PAIR_H_
 
 #include <utility>
 
@@ -64,4 +64,4 @@ public:
 
 #include "Sources/Types/Pair.cpp"
 
-#endif // !_TYPES_PAIR_H_
+#endif // !_WPP_TYPES_PAIR_H_

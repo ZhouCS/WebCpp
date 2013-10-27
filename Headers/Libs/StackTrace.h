@@ -23,8 +23,8 @@
  * @date 2013-05-19
  */
 
-#ifndef _LIBS_STACKTRACE_H_
-#define _LIBS_STACKTRACE_H_
+#ifndef _WPP_LIBS_STACKTRACE_H_
+#define _WPP_LIBS_STACKTRACE_H_
 
 #include "Types/List.h"
 #include "Types/Path.h"
@@ -63,4 +63,4 @@ private:
 	static Map<String, uint64_t> _soMapCache;
 };
 
-#endif // !_LIBS_STACKTRACE_H_
+#endif // !_WPP_LIBS_STACKTRACE_H_

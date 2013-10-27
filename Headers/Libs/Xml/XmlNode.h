@@ -23,8 +23,8 @@
  * @date 2012-02-22
  */
 
-#ifndef _LIBS_XML_XMLNODE_H_
-#define	_LIBS_XML_XMLNODE_H_
+#ifndef _WPP_LIBS_XML_XMLNODE_H_
+#define	_WPP_LIBS_XML_XMLNODE_H_
 
 #include <pugixml.hpp>
 
@@ -103,4 +103,4 @@ private:
 	List<XmlNode> _childIteratorList;
 };
 
-#endif // !_LIBS_XML_XMLNODE_H_
+#endif // !_WPP_LIBS_XML_XMLNODE_H_

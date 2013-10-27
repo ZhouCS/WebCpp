@@ -23,8 +23,8 @@
  * \date 2011-12-18
  */
 
-#ifndef _MYSQLCONNECTION_H_
-#define	_MYSQLCONNECTION_H_
+#ifndef _WPP_MYSQLCONNECTION_H_
+#define	_WPP_MYSQLCONNECTION_H_
 
 #include <DB/AbstractDbConnection.h>
 
@@ -82,4 +82,4 @@ private:
 	MYSQL _handle;
 };
 
-#endif // !_MYSQLCONNECTION_H_
+#endif // !_WPP_MYSQLCONNECTION_H_

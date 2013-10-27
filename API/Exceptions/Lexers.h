@@ -23,8 +23,8 @@
  * @date 2012-05-26
  */
 
-#ifndef _EXCEPTIONS_LEXERS_H_
-#define	_EXCEPTIONS_LEXERS_H_
+#ifndef _WPP_EXCEPTIONS_LEXERS_H_
+#define	_WPP_EXCEPTIONS_LEXERS_H_
 
 #include "Exceptions/Exception.h"
 
@@ -41,4 +41,4 @@ public:
 
 }
 
-#endif // !_EXCEPTIONS_LEXERS_H_
+#endif // !_WPP_EXCEPTIONS_LEXERS_H_

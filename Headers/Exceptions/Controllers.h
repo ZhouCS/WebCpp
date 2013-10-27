@@ -23,8 +23,8 @@
  * @date 2012-02-17
  */
 
-#ifndef _EXCEPTIONS_CONTROLLERS_H_
-#define	_EXCEPTIONS_CONTROLLERS_H_
+#ifndef _WPP_EXCEPTIONS_CONTROLLERS_H_
+#define	_WPP_EXCEPTIONS_CONTROLLERS_H_
 
 #include "Exceptions/Exception.h"
 
@@ -43,4 +43,4 @@ EXCEPTION(NoSuchControllerAction,
 
 }
 
-#endif // !_EXCEPTIONS_CONTROLLERS_H_
+#endif // !_WPP_EXCEPTIONS_CONTROLLERS_H_

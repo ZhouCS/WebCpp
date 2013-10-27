@@ -23,8 +23,8 @@
  * @date 2011-12-14
  */
 
-#ifndef _MVC_CONTROLLER_H_
-#define _MVC_CONTROLLER_H_
+#ifndef _WPP_MVC_CONTROLLER_H_
+#define _WPP_MVC_CONTROLLER_H_
 
 #include "Types/String.h"
 #include "Types/Map.h"
@@ -351,4 +351,4 @@ private:
 	Map<String, String> _args;
 };
 
-#endif  // !_MVC_CONTROLLER_H_
+#endif  // !_WPP_MVC_CONTROLLER_H_

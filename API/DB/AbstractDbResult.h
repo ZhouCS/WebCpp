@@ -23,8 +23,8 @@
  * @date 2011-12-27
  */
 
-#ifndef _DB_ABSTRACTDBRESULT_H_
-#define	_DB_ABSTRACTDBRESULT_H_
+#ifndef _WPP_DB_ABSTRACTDBRESULT_H_
+#define	_WPP_DB_ABSTRACTDBRESULT_H_
 
 #include "Types/StringList.h"
 #include "Types/Map.h"
@@ -140,4 +140,4 @@ private:
 	AbstractDbResult* _res;
 };
 
-#endif // !_DB_ABSTRACTDBRESULT_H_
+#endif // !_WPP_DB_ABSTRACTDBRESULT_H_

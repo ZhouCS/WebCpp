@@ -17,8 +17,8 @@
  * along with WebCpp. If not, see <http://www.gnu.org/licenses/>.        *
  *************************************************************************/
 
-#ifndef _EXCEPTIONS_FILES_H_
-#define _EXCEPTIONS_FILES_H_
+#ifndef _WPP_EXCEPTIONS_FILES_H_
+#define _WPP_EXCEPTIONS_FILES_H_
 
 #include "Exceptions/Exception.h"
 #include "Types/Path.h"
@@ -34,4 +34,4 @@ EXCEPTION(FileOpenFail,
 
 }
 
-#endif // !_EXCEPTIONS_FILES_H_
+#endif // !_WPP_EXCEPTIONS_FILES_H_

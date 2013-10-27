@@ -23,8 +23,8 @@
  * @date 2011-11-24
  */
 
-#ifndef _TYPES_RENDERABLE_H_
-#define _TYPES_RENDERABLE_H_
+#ifndef _WPP_TYPES_RENDERABLE_H_
+#define _WPP_TYPES_RENDERABLE_H_
 
 #include "Types/Variant.h"
 #include "Types/StringList.h"
@@ -116,4 +116,4 @@ private:
 	void* _val;
 };
 
-#endif // !_TYPES_RENDERABLE_H_
+#endif // !_WPP_TYPES_RENDERABLE_H_
