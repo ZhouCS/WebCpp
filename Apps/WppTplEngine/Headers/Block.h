@@ -84,6 +84,7 @@ private:
 	int  blockSourceIndex(int leftPos, int right, bool wantLeft);
 	void skipString(int* i);
 	void skipWhitespaces(int* i);
+	void callCompiledEvent(Block* block);
 
 protected:
 	ArgumentPolicy _argPolicy;

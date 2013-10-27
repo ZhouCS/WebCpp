@@ -101,6 +101,7 @@ Block::Block(CompiledTpl* tpl,
 		throw ECompile(_tpl, String("unexpected end of template, expecting closing "
 		                            "of block “%1”").format(block->name()));
 	}
+	callCompiledEvent(this);
 }
 
 Block::~Block()
@@ -209,7 +210,6 @@ void Block::closeBlock(int* i, Stack<Block*>* blocks)
 	_src = _src.replace(toClose->_outerStart, toClose->_outerEnd, "");
 	*i = toClose->_outerStart;
 	blocks->top()->_vals.insert(*i - blocks->top()->_innerStart, Value(toClose));
-	toClose->compiledEvent();
 }
 
 int Block::blockSourceIndex(int left, int right, bool wantLeft)
@@ -288,6 +288,13 @@ void Block::skipWhitespaces(int* i)
 {
 	while (_src[*i] == ' ' || _src[*i] == '\t' || _src[*i] == '\n')
 		(*i)++;
+}
+
+void Block::callCompiledEvent(Block* block)
+{
+	for (Block* subBlock : block->blocks().values())
+		callCompiledEvent(subBlock);
+	block->compiledEvent();
 }
 
 //----------------------------------------------------------------------------//
