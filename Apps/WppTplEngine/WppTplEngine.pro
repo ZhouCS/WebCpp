@@ -6,7 +6,7 @@ CONFIG += debug
 INCLUDEPATH = Headers/ /usr/local/include/webcpp/
 OBJECTS_DIR = Build/
 TARGET = WppTplEngine.so
-DESTDIR = ../../../Debug/WebCpp/Plugins/TemplateEngines/
+DESTDIR = ../../Debug/WebCpp/Plugins/TemplateEngines/
 
 QMAKE_LFLAGS = -shared
 
