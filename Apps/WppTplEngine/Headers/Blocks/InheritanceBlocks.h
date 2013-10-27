@@ -30,6 +30,8 @@
 
 namespace Blocks {
 
+class InheritBlock;
+
 class Inherit : public Block
 {
 public:
@@ -37,6 +39,16 @@ public:
 	Inherit(Block* parent);
 
 	virtual Block* newInstance(Block* parent) const override;
+	virtual void   setArgument(const String& arg) override;
+	virtual void   compiledEvent() override;
+	virtual String render(Template* tpl, int, int) override;
+
+	CompiledTpl* base() const;
+	Block*       inheritBlock(const String& name) const;
+
+private:
+	CompiledTpl* _base;
+	Map<String, InheritBlock*> _inheritBlocks;
 };
 
 //----------------------------------------------------------------------------//
@@ -48,6 +60,13 @@ public:
 	InheritBlock(Block* parent);
 
 	virtual Block* newInstance(Block* parent) const override;
+	virtual void   setArgument(const String& arg) override;
+	virtual String render(Template* tpl, int, int) override;
+
+	String inheritName() const;
+
+private:
+	String _inheritName;
 };
 
 } // ns Blocks
