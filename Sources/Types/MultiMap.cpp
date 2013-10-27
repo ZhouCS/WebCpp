@@ -60,6 +60,10 @@ void MultiMap<Key, Value>::insert(const Key& key, const Value& value)
 { std::multimap<Key, Value>::insert(std::pair<Key, Value>(key, value)); }
 
 template<typename Key, typename Value>
+void MultiMap<Key, Value>::clear()
+{ std::multimap<Key, Value>::clear(); }
+
+template<typename Key, typename Value>
 typename MultiMap<Key, Value>::Iterator MultiMap<Key, Value>::it() const
 { return MultiMap<Key, Value>::Iterator(*this); }
 
@@ -70,6 +74,21 @@ List<Key> MultiMap<Key, Value>::keys() const
 	for (auto i = it(); i.hasNext(); i++)
 		list.append(i.key());
 	return list;
+}
+
+template<typename Key, typename Value>
+List<Value> MultiMap<Key, Value>::values() const
+{
+	List<Value> list;
+	for (auto i = it(); i.hasNext(); i++)
+		list.append(i.value());
+	return list;
+}
+
+template<typename Key, typename Value>
+int MultiMap<Key, Value>::count() const
+{
+	return std::multimap<Key, Value>::size();
 }
 
 //----------------------------------------------------------------------------//
