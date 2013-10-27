@@ -74,6 +74,9 @@ public:
 	 */
 	void setDefaultEngine(AbstractTemplateEngine* defaultEngine);
 
+public:
+	static AbstractTemplateEngine* engineByName(const String& name);
+
 private:
 	/**
 	 * @brief Constructs the template manager instance

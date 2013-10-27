@@ -102,6 +102,10 @@ TemplatesManager::compiledTemplate(const Path& filePath,
 	return compiledTpl;
 }
 
+AbstractTemplateEngine* TemplatesManager::engineByName(const String& name)
+{
+	return TemplatesManager::get()->_engines.get(name, nullptr);
+}
 
 void TemplatesManager::setDefaultEngine(AbstractTemplateEngine* defaultEngine)
 { _defaultEngine = defaultEngine; }
