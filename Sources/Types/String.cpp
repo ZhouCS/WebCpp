@@ -190,8 +190,8 @@ String String::right(int n) const
 String String::mid(int start, int end) const
 { return substr(start, end - start + 1); }
 
-String String::midToRight(int left, int right) const
-{ return substr(left, right - left); }
+String String::midExcluded(int start, int end) const
+{ return substr(start, end - start); }
 
 String String::removeLeft(int n) const
 { return substr(n); }
