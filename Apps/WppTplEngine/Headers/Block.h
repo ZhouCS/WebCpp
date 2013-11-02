@@ -38,9 +38,18 @@ class CompiledTpl;
 class Block
 {
 public:
+	struct Value
+	{
+		Block* block;
+		Expr*  expr;
+		Value(Block* block) : block(block), expr(nullptr){}
+		Value(Expr* expr) : block(nullptr), expr(expr){}
+	};
+
 	enum ArgumentPolicy {NoArgument, OptionalArgument, RequiredArgument};
 	enum HasBodyBool {HasBody = true, HasNoBody = false};
 
+public:
 	Block(const String& name, ArgumentPolicy argPolicy, HasBodyBool hasBody);
 	Block(Block* parent, const String& name);
 	Block(CompiledTpl* tpl,
@@ -52,7 +61,9 @@ public:
 	virtual String render(Template* tpl, int from = 0, int end = -1);
 
 	String       name() const;
+	Block*       parent() const;
 	CompiledTpl* tpl() const;
+	MultiMap<int, Value>& vals();
 	MultiMap<int, Expr*>  exprs() const;
 	MultiMap<int, Block*> blocks() const;
 	Variant      var(Template* tpl, const String& name) const;
@@ -69,14 +80,6 @@ protected:
 	virtual void   compiledEvent();
 
 private:
-	struct Value
-	{
-		Block* block;
-		Expr*  expr;
-		Value(Block* block) : block(block), expr(nullptr){}
-		Value(Expr* expr) : block(nullptr), expr(expr){}
-	};
-
 	bool isEscaped(int* i);
 	int  exprLength(bool blockArg, int i);
 	void parseBlock(int* i, Stack<Block*>* blocks);

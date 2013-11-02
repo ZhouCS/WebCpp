@@ -357,8 +357,14 @@ void Block::compiledEvent()
 String Block::name() const
 { return _name; }
 
+Block* Block::parent() const
+{ return _parent; }
+
 CompiledTpl* Block::tpl() const
 { return _tpl; }
+
+MultiMap<int, Block::Value>& Block::vals()
+{ return _vals; }
 
 MultiMap<int, Expr*> Block::exprs() const
 {
