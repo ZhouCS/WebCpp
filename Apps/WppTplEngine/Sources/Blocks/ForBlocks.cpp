@@ -32,12 +32,20 @@
 namespace Blocks {
 
 For::For()
-  : Block("for", Block::RequiredArgument, Block::HasBody)
+  : Block("for", Block::RequiredArgument, Block::HasBody),
+    _value(nullptr)
 {}
 
 For::For(Block* parent)
-  : Block(parent, "for")
+  : Block(parent, "for"),
+    _value(nullptr)
 {}
+
+For::~For()
+{
+	if (_value != nullptr)
+		delete _value;
+}
 
 Block* For::newInstance(Block *parent) const
 { return new For(parent); }

@@ -35,6 +35,7 @@ class For : public Block
 public:
 	For();
 	For(Block* parent);
+	virtual ~For() override;
 
 	virtual Block* newInstance(Block* parent) const override;
 	virtual void   setArgument(const String& arg) override;
