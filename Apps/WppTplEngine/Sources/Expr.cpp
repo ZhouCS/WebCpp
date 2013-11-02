@@ -44,6 +44,11 @@ Expr::Expr(Block* parent, const String& src)
 	//dumpAst();
 }
 
+Expr::~Expr()
+{
+	delete _root;
+}
+
 Variant Expr::exec(Template* tpl)
 {
 	return _root->exec(tpl);

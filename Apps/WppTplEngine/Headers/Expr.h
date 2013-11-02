@@ -38,6 +38,7 @@ class Expr
 {
 public:
 	Expr(Block* parent, const String& src);
+	~Expr();
 
 	Variant exec(Template* tpl);
 	String  render(Template* tpl);
