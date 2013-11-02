@@ -143,6 +143,7 @@ public:
 	~View()
 	{
 		_view->clear();
+		delete _view;
 	}
 
 	ViewVarSetter operator[](const String& var)
