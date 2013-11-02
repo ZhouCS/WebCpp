@@ -101,8 +101,8 @@ void Inherit::compiledEvent()
 		                     "inheritance");
 	}
 
-	_vals.clear();
-	_src = "";
+	_parent->vals().clear();
+	_parent = nullptr;
 	_tpl->setRootBlock(this);
 }
 
