@@ -36,6 +36,8 @@ class CompiledTpl : public AbstractCompiledTemplate
 public:
 	CompiledTpl(const Path& filePath);
 
+	virtual ~CompiledTpl();
+
 	/**
 	 * @brief Renders the compiled template
 	 * @param tpl The template instance to render

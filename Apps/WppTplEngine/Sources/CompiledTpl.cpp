@@ -35,6 +35,13 @@ CompiledTpl::CompiledTpl(const Path& filePath)
 	Block* root = new Block(this, File::getContent(filePath));
 	if (_rootBlock == nullptr)
 		_rootBlock = root;
+	else
+		delete root;
+}
+
+CompiledTpl::~CompiledTpl()
+{
+	delete _rootBlock;
 }
 
 String CompiledTpl::render(Template* tpl)
