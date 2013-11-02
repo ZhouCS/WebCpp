@@ -62,6 +62,7 @@ public:
 
 	virtual Block* newInstance(Block* parent) const override;
 	virtual void   setArgument(const String& arg) override;
+	virtual void   compiledEvent() override;
 	virtual String render(Template* tpl, int, int) override;
 
 	String inheritName() const;

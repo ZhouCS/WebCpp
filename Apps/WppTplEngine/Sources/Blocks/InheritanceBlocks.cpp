@@ -142,6 +142,12 @@ void InheritBlock::setArgument(const String& arg)
 	_inheritName = arg;
 }
 
+void InheritBlock::compiledEvent()
+{
+	if (_tpl->rootBlock() != nullptr && _tpl->rootBlock()->name() == "inherit")
+		_parent = nullptr;
+}
+
 String InheritBlock::render(Template* tpl, int, int)
 {
 	CompiledTpl* compiled = dynamic_cast<CompiledTpl*>(tpl->compiledTpl());
