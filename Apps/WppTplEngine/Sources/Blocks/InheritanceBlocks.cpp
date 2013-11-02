@@ -44,6 +44,12 @@ Inherit::Inherit(Block* parent)
     _base(nullptr)
 {}
 
+Inherit::~Inherit()
+{
+	for (Block* block : _inheritBlocks.values())
+		delete block;
+}
+
 Block* Inherit::newInstance(Block *parent) const
 { return new Inherit(parent); }
 
