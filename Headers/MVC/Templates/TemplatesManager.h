@@ -77,6 +77,9 @@ public:
 public:
 	static AbstractTemplateEngine* engineByName(const String& name);
 
+	static void setTemplate(const String& filePath,
+	                        AbstractCompiledTemplate* compiledTpl);
+
 private:
 	/**
 	 * @brief Constructs the template manager instance

@@ -107,5 +107,11 @@ AbstractTemplateEngine* TemplatesManager::engineByName(const String& name)
 	return TemplatesManager::get()->_engines.get(name, nullptr);
 }
 
+void TemplatesManager::setTemplate(const String& filePath,
+                                   AbstractCompiledTemplate* compiledTpl)
+{
+	TemplatesManager::get()->_templates[filePath] = compiledTpl;
+}
+
 void TemplatesManager::setDefaultEngine(AbstractTemplateEngine* defaultEngine)
 { _defaultEngine = defaultEngine; }
