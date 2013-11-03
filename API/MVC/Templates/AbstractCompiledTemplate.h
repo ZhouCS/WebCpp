@@ -31,6 +31,7 @@
 
 class Template;
 class String;
+class AbstractTemplateEngine;
 
 /**
  * @class AbstractCompiledTemplate MVC/Templates/AbstractCompiledTemplate.h
@@ -40,9 +41,22 @@ class String;
 class AbstractCompiledTemplate
 {
 public:
-	AbstractCompiledTemplate(const Path& filePath);
+	AbstractCompiledTemplate(const Path& filePath,
+	                         AbstractTemplateEngine* engine);
 
 	virtual ~AbstractCompiledTemplate(){}
+
+	/**
+	 * @brief Adds a template as a dependency
+	 * @param tpl The template to add as a dependency
+	 */
+	void addDependency(AbstractCompiledTemplate* tpl);
+
+	/**
+	 * @brief Check this template of updates
+	 * @return true if updated, otherwise false
+	 */
+	bool update();
 
 	/**
 	 * @brief Renders the compiled template
@@ -51,12 +65,15 @@ public:
 	 */
 	virtual String render(Template* tpl) = 0;
 
-	Path filePath() const;
+	Path     filePath() const;
 	DateTime compileTime() const;
+	bool     dependsOn(AbstractCompiledTemplate* tpl) const;
 
 private:
-	Path _filePath;
+	AbstractTemplateEngine* _engine;
+	Path     _filePath;
 	DateTime _compileTime;
+	List<AbstractCompiledTemplate*> _dependencies;
 };
 
 #endif // !_WPP_MVC_TEMPLATES_ABSTRACTCOMPILEDTEMPLATE_H_
