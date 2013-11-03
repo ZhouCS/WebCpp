@@ -48,11 +48,18 @@ public:
 	virtual ~AbstractTemplateEngine(){}
 
 	/**
+	 * @brief Compiles a template by file path
+	 * @param filePath The template's file path to compile
+	 * @return The compiled template
+	 */
+	AbstractCompiledTemplate* compile(const Path& filePath);
+
+	/**
 	 * @brief Implements how to compile a template
 	 * @param name The template file path
 	 * @return The compiled template
 	 */
-	virtual AbstractCompiledTemplate* compile(const Path& filePath) = 0;
+	virtual AbstractCompiledTemplate* compileImpl(const Path& filePath) = 0;
 
 
 	String id() const;

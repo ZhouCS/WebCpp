@@ -47,7 +47,7 @@ WppTplEngine::~WppTplEngine()
 	Block::deleteBlocks();
 }
 
-AbstractCompiledTemplate* WppTplEngine::compile(const Path& filePath)
+AbstractCompiledTemplate* WppTplEngine::compileImpl(const Path& filePath)
 {
 	return new CompiledTpl(filePath);
 }

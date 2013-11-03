@@ -24,9 +24,19 @@
  */
 
 #include "MVC/Templates/AbstractTemplateEngine.h"
+#include "MVC/Templates/TemplatesManager.h"
+
+#include "Types/Path.h"
 
 AbstractTemplateEngine::AbstractTemplateEngine(const String& id)
 { _id = id; }
+
+AbstractCompiledTemplate* AbstractTemplateEngine::compile(const Path& filePath)
+{
+	AbstractCompiledTemplate* compiled = compileImpl(filePath);
+	TemplatesManager::setTemplate(filePath.absolutePath(), compiled);
+	return compiled;
+}
 
 //----------------------------------------------------------------------------//
 

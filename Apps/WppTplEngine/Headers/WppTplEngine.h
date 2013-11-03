@@ -40,7 +40,7 @@ public:
 	 * @param name The template file path
 	 * @return The compiled template
 	 */
-	virtual AbstractCompiledTemplate* compile(const Path& filePath) override;
+	virtual AbstractCompiledTemplate* compileImpl(const Path& filePath) override;
 };
 
 #endif // !_WPP_WPPTPLENGINE_H_
