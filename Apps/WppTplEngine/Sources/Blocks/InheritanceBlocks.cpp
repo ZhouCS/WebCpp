@@ -63,6 +63,7 @@ void Inherit::setArgument(const String& arg)
 		throw ECompile(_tpl, String("template “%1” not found for inheritance")
 		                     .format(arg));
 	}
+	_tpl->addDependency(_base);
 }
 
 void Inherit::compiledEvent()
