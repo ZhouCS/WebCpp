@@ -33,6 +33,11 @@ AbstractCompiledTemplate::AbstractCompiledTemplate(const Path& filePath,
     _compileTime(DateTime::now())
 {}
 
+void AbstractCompiledTemplate::addDependency(AbstractCompiledTemplate* tpl)
+{
+	_dependencies.append(tpl);
+}
+
 //----------------------------------------------------------------------------//
 
 Path AbstractCompiledTemplate::filePath() const
@@ -40,3 +45,6 @@ Path AbstractCompiledTemplate::filePath() const
 
 DateTime AbstractCompiledTemplate::compileTime() const
 { return _compileTime; }
+
+bool AbstractCompiledTemplate::dependsOn(AbstractCompiledTemplate* tpl) const
+{ return _dependencies.contains(tpl); }

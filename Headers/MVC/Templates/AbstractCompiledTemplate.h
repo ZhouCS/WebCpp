@@ -47,19 +47,25 @@ public:
 	virtual ~AbstractCompiledTemplate(){}
 
 	/**
+	 * @brief Adds a template as a dependency
+	 * @param tpl The template to add as a dependency
+	 */
+	void addDependency(AbstractCompiledTemplate* tpl);
 	 * @brief Renders the compiled template
 	 * @param tpl The template instance to render
 	 * @return The output
 	 */
 	virtual String render(Template* tpl) = 0;
 
-	Path filePath() const;
+	Path     filePath() const;
 	DateTime compileTime() const;
+	bool     dependsOn(AbstractCompiledTemplate* tpl) const;
 
 private:
-	Path _filePath;
 	AbstractTemplateEngine* _engine;
+	Path     _filePath;
 	DateTime _compileTime;
+	List<AbstractCompiledTemplate*> _dependencies;
 };
 
 #endif // !_WPP_MVC_TEMPLATES_ABSTRACTCOMPILEDTEMPLATE_H_
