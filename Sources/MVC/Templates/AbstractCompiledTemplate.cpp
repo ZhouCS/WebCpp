@@ -26,6 +26,8 @@
 #include "MVC/Templates/AbstractCompiledTemplate.h"
 #include "MVC/Templates/AbstractTemplateEngine.h"
 
+#include "Libs/IO/File.h"
+
 AbstractCompiledTemplate::AbstractCompiledTemplate(const Path& filePath,
                                                    AbstractTemplateEngine* eng)
   : _engine(eng),
@@ -36,6 +38,24 @@ AbstractCompiledTemplate::AbstractCompiledTemplate(const Path& filePath,
 void AbstractCompiledTemplate::addDependency(AbstractCompiledTemplate* tpl)
 {
 	_dependencies.append(tpl);
+}
+
+bool AbstractCompiledTemplate::update()
+{
+	bool toUpdate = false;
+	for (AbstractCompiledTemplate* dep : _dependencies)
+	{
+		if (dep->update())
+			toUpdate = true;
+	}
+	if (!toUpdate)
+		toUpdate = File(_filePath).lastEditTime() > _compileTime;
+	if (toUpdate)
+	{
+		_engine->compile(_filePath);
+		delete this;
+	}
+	return toUpdate;
 }
 
 //----------------------------------------------------------------------------//

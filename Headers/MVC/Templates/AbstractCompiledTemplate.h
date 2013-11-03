@@ -51,6 +51,14 @@ public:
 	 * @param tpl The template to add as a dependency
 	 */
 	void addDependency(AbstractCompiledTemplate* tpl);
+
+	/**
+	 * @brief Check this template of updates
+	 * @return true if updated, otherwise false
+	 */
+	bool update();
+
+	/**
 	 * @brief Renders the compiled template
 	 * @param tpl The template instance to render
 	 * @return The output
