@@ -77,29 +77,18 @@ AbstractCompiledTemplate*
 TemplatesManager::compiledTemplate(const Path& filePath,
                                    AbstractTemplateEngine* tplEngine)
 {
-	AbstractCompiledTemplate* compiledTpl;
-
 	if (TemplatesManager::get()->_templates.hasKey(filePath.absolutePath()))
 	{
-		compiledTpl = TemplatesManager::get()->_templates[filePath.absolutePath()];
 #ifdef DEBUG
-		if (File(filePath).lastEditTime() > compiledTpl->compileTime())
-			delete compiledTpl;
-		else
-			return compiledTpl;
-#endif
-#ifndef DEBUG
-		return compiledTpl;
+		TemplatesManager::get()->_templates[filePath.absolutePath()]->update();
+#else
+		return TemplatesManager::get()->_templates[filePath.absolutePath()];
 #endif
 	}
 
 	if (tplEngine == nullptr)
 		tplEngine = TemplatesManager::get()->_defaultEngine;
-
-	compiledTpl = tplEngine->compile(filePath);
-	TemplatesManager::get()->_templates.set(filePath.absolutePath(), compiledTpl);
-
-	return compiledTpl;
+	return tplEngine->compile(filePath);
 }
 
 AbstractTemplateEngine* TemplatesManager::engineByName(const String& name)
