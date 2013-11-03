@@ -27,9 +27,11 @@
 #include "Block.h"
 
 #include <File>
+#include <MVC/Templates/TemplatesManager.h>
 
 CompiledTpl::CompiledTpl(const Path& filePath)
-  : AbstractCompiledTemplate(filePath),
+  : AbstractCompiledTemplate(filePath,
+                             TemplatesManager::engineByName("WppTpl")),
     _rootBlock(nullptr)
 {
 	Block* root = new Block(this, File::getContent(filePath));

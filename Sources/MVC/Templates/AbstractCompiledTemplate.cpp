@@ -24,12 +24,14 @@
  */
 
 #include "MVC/Templates/AbstractCompiledTemplate.h"
+#include "MVC/Templates/AbstractTemplateEngine.h"
 
-AbstractCompiledTemplate::AbstractCompiledTemplate(const Path& filePath)
-{
-	_filePath = filePath;
-	_compileTime = DateTime::now();
-}
+AbstractCompiledTemplate::AbstractCompiledTemplate(const Path& filePath,
+                                                   AbstractTemplateEngine* eng)
+  : _engine(eng),
+    _filePath(filePath),
+    _compileTime(DateTime::now())
+{}
 
 //----------------------------------------------------------------------------//
 

@@ -31,6 +31,7 @@
 
 class Template;
 class String;
+class AbstractTemplateEngine;
 
 /**
  * @class AbstractCompiledTemplate MVC/Templates/AbstractCompiledTemplate.h
@@ -40,7 +41,8 @@ class String;
 class AbstractCompiledTemplate
 {
 public:
-	AbstractCompiledTemplate(const Path& filePath);
+	AbstractCompiledTemplate(const Path& filePath,
+	                         AbstractTemplateEngine* engine);
 
 	virtual ~AbstractCompiledTemplate(){}
 
@@ -56,6 +58,7 @@ public:
 
 private:
 	Path _filePath;
+	AbstractTemplateEngine* _engine;
 	DateTime _compileTime;
 };
 
